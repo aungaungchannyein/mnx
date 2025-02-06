@@ -1,0 +1,98 @@
+<style type="text/css">
+    div#popupBanner {
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    .modal-content {
+        background-color: white;
+        border-radius: 8px;
+        padding: 20px;
+    }
+    .modal-header {
+        border-bottom: none;
+        color: black;
+    }
+    .modal-body {
+        color: black;
+    }
+    .checkbox-container {
+        margin-top: 15px;
+    }
+    .btn {
+        margin-top: 10px;
+    }
+</style>
+
+<div aria-labelledby="bnn1Label" aria-modal="true" class="modal modal-lg fade" id="popupBanner" role="dialog" style="display: none;" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered" style="max-width: 500px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Sorry</h3>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Company policy prevents us from offering services to individuals residing in <strong id="countryName"></strong>.
+                </p>
+                <p>
+                    If you are not a resident of <strong id="countryNameRepeat"></strong> and this message appears incorrectly, please confirm and click continue.
+                </p>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="confirmCheckbox">
+                    <label for="confirmCheckbox">I confirm I am not a resident of <strong id="countryNameCheckbox"></strong>.</label>
+                </div>
+                <button class="btn btn-primary" id="continueButton" disabled>Continue</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        // Simulated example: Replace with actual method of getting the user's country code
+        var countryCode = sessionStorage.getItem('country_code'); // Cloudflare injects this header
+        var countryMapping = {
+            AF: "Afghanistan",
+            AU: "Australia",
+            BY: "Belarus",
+            BE: "Belgium",
+            CF: "Central African Republic",
+            CU: "Cuba",
+            CY: "Cyprus",
+            ET: "Ethiopia",
+            FR: "France",
+            ID: "Indonesia",
+            LB: "Lebanon",
+            LY: "Libya",
+            NI: "Nicaragua",
+            KP: "North Korea",
+            ES: "Spain",
+            SD: "Sudan",
+            SY: "Syria",
+            US: "United States",
+            VE: "Venezuela",
+            YE: "Yemen",
+            ZW: "Zimbabwe",
+            SG: "Singapore"
+        };
+
+        var restrictedCountries = Object.keys(countryMapping);
+        if (restrictedCountries.includes(countryCode)) {
+            var countryName = countryMapping[countryCode];
+            $("#countryName, #countryNameRepeat, #countryNameCheckbox").text(countryName);
+
+            setTimeout(function () {
+                $('#popupBanner').modal('show');
+            }, 15000); // 15 seconds delay
+
+            // Enable the Continue button only if the checkbox is checked
+            $("#confirmCheckbox").on("change", function () {
+                $("#continueButton").prop("disabled", !this.checked);
+            });
+
+            // Handle Continue button click
+            $("#continueButton").on("click", function () {
+                $('#popupBanner').modal('hide');
+            });
+        }
+    });
+</script>

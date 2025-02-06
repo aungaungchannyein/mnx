@@ -1,0 +1,190 @@
+steps:
+    applications.questionnaire.step1:
+        config:
+            defaultValidators:
+                - required
+                - english
+            label: 'Investor Profile'
+        fields:
+            deposit_plan:
+                label: 'How much do you plan to deposit on a yearly basis (USD)?'
+                choices:
+                    - '0 to 20,000'
+                    - '20,001 - 50,000'
+                    - '50,001 - 250,000'
+                    - '250,001 - 500,000'
+                    - '500,001 - 1,000,000'
+                    - '1,000,001 - 3,000,000'
+                    - 'More than 3,000,000'
+            purpose_of_opening_account:
+                label: 'What is the purpose of opening a trading account with us?'
+                choices:
+                    - 'To place short-term speculative trades'
+                    - 'To make long-term investments'
+                    - 'To trade and hedge the markets start trading with less money using leverage and risk management techniques'
+                    - 'To gain access to multiple markets and diversify your portfolio with forex, stocks and commodities'
+            employment_status:
+                label: 'What is your employment status?'
+                choices:
+                    - Employed
+                    - Self-Employed
+                    - Retired
+                    - Unemployed
+                    - Student
+            employment_position:
+                label: 'Employment Position.'
+                choices:
+                    - Owner
+                    - 'Senior Management / Executive Management'
+                    - 'Middle Management / Section Head'
+                    - 'Line Manager / Assistant Manager'
+                    - Staff
+                    - Other
+                validators:
+                    requiredIf: { employment_status: [Employed, Self-Employed, Retired, Unemployed] }
+            other_employment_positions:
+                label: 'Other employment positions'
+                validators:
+                    requiredIf: { employment_position: [Other] }
+            description_of_current_job:
+                label: 'Description of Current Job'
+                validators:
+                    requiredIf: { employment_status: [Employed, Self-Employed] }
+            name_of_current_employer:
+                label: 'Name of Current Employer'
+                validators:
+                    requiredIf: { employment_status: [Employed, Self-Employed] }
+            start_date_of_current_employment:
+                label: 'Start Date of Current Employment'
+                date: true
+                validators:
+                    requiredIf: { employment_status: [Employed, Self-Employed] }
+            description_of_past_employment:
+                label: 'Description of Past Employment'
+                validators:
+                    requiredIf: { employment_status: [Retired, Unemployed] }
+            name_of_past_employer:
+                label: 'Name of Past Employer'
+                validators:
+                    requiredIf: { employment_status: [Retired, Unemployed] }
+            start_date_of_past_employment:
+                label: 'Start Date of Past Employment'
+                date: true
+                validators:
+                    requiredIf: { employment_status: [Retired, Unemployed] }
+            end_date_of_past_employment:
+                label: 'End Date of Past Employment'
+                date: true
+                validators:
+                    requiredIf: { employment_status: [Retired, Unemployed] }
+            total_annual_income:
+                label: 'Total Annual Income (USD).'
+                choices:
+                    - '0 to 25,000'
+                    - '25,001 - 50,000'
+                    - '50,001 - 100,000'
+                    - '100,000 - 250,000'
+                    - '250,001 - 500,000'
+                    - '500,001 - 1,000,000'
+                    - 'More than 1,000,000'
+                validators:
+                    requiredIf: { employment_status: [Employed, Self-Employed, Retired, Unemployed] }
+            estimated_annual_income:
+                label: 'Please estimate your annual income (USD).'
+                choices:
+                    - '0 to 25,000'
+                    - '25,001 - 50,000'
+                    - '50,001 - 100,000'
+                    - '100,000 - 250,000'
+                    - '250,001 - 500,000'
+                    - '500,001 - 1,000,000'
+                    - 'More than 1,000,000'
+                validators:
+                    requiredIf: { employment_status: [Student] }
+            source_of_funds:
+                label: 'What is the source of your funds?'
+                choices:
+                    - Savings
+                    - Pension
+                    - 'Family Support'
+                    - 'Government Support'
+                    - Gift
+                    - Inheritance
+                    - 'Sale of Property'
+                    - 'Income from Employment / Self-Employment'
+                    - 'Sale / Liquidation of Investment'
+            estimated_net_worth:
+                label: 'Please estimate your net worth (USD).'
+                choices:
+                    - 'Less than 50,000'
+                    - '50,000 - 100,000'
+                    - '100,000 - 250,000'
+                    - '250,000 - 500,000'
+                    - '500,000 - 750,000'
+                    - '750,000 - 1,000,000'
+                    - '1,000,000 - 3,000,000'
+                    - 'More than 3,000,000'
+    applications.questionnaire.step2:
+        config:
+            defaultValidators:
+                - required
+                - english
+            label: 'Trading Knowledge and Experience'
+        fields:
+            experience:
+                label: 'Experience In Trading CFDs (Forex, Metal, Commodities)'
+                choices:
+                    - Advanced
+                    - Intermediate
+                    - Beginner
+                    - 'No Experience'
+    applications.questionnaire.step3:
+        config:
+            defaultValidators:
+                - required
+                - english
+            label: Declarations
+        fields:
+            uscitizen:
+                label: 'Are you a U.S citizen or U.S. resident for tax purposes?'
+                choices:
+                    - 'Yes'
+                    - 'No'
+                validators:
+                    equalTo: { value: 'No', message: 'Our services are not accessible to U.S. citizens' }
+            tax_resident_of:
+                label: 'Please select the country you are a tax resident of.'
+                country: true
+                validators:
+                    requiredIf: { uscitizen: ['No'] }
+            tax_identification:
+                label: 'Do you have a Tax Identification Number (TIN)?'
+                choices:
+                    - 'Yes'
+                    - 'No'
+            tin_number:
+                label: 'Complete your TIN to continue.'
+                validators:
+                    requiredIf: { tax_identification: ['Yes'] }
+            no_tin:
+                label: 'Please choose the reason you do not have one.'
+                choices:
+                    - 'The specified country does not issue TINs to its resident'
+                    - 'I’m not legally required to obtain a TIN from the specified country'
+                    - 'I’m not required to disclosed a TIN under the laws of the specified country'
+                    - 'I’m unable to obtain a TIN or equivalent and I will provide further explanation'
+                validators:
+                    requiredIf: { tax_identification: ['No'] }
+            further_explanation:
+                label: 'Provide the reason you are unable to obtain one.'
+                validators:
+                    requiredIf: { no_tin: ['I’m unable to obtain a TIN or equivalent and I will provide further explanation'] }
+            pep:
+                label: 'Are you a Politically Exposed Person (PEP) or related to a PEP?'
+                choices:
+                    - 'Yes'
+                    - 'No'
+            non_pep:
+                label: 'Please provide further clarifications for your position or your relationship with a Politically Exposed Person.'
+                validators:
+                    requiredIf: { pep: ['Yes'] }

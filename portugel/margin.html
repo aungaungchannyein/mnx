@@ -1,0 +1,129 @@
+<main id="main">
+    <section class="support" id="support">
+    <div class="container mt-50 pt-50">
+        <h1 class="text-center">Uso de capital menor para controlar posições comerciais maiores.</h1>
+    
+        <h2 class="text-center">A margem é uma porcentagem do tamanho da posição e varia de acordo com o ativo e as condições do mercado. &nbsp;</h2>
+        &nbsp;
+    
+        <div class="row mt-50 justify-content-center margin-formulas">
+            <div class="col-10">
+                <h2 class="text-center"><strong>Consulte as fórmulas de margem abaixo:</strong></h2>
+            </div>
+    
+            <ul class="nav nav-tabs justify-content-center" id="depoWithdraw" role="tablist">
+                <li class="nav-item h1" role="presentation"><button aria-controls="frx" aria-selected="true" class="nav-link mx-auto active" data-bs-target="#frx" data-bs-toggle="tab" id="frx-tab" role="tab" type="button">Forex</button></li>
+                <li class="nav-item h1" role="presentation"><button aria-controls="cics" aria-selected="false" class="nav-link mx-auto" data-bs-target="#cics" data-bs-toggle="tab" id="cics-tab" role="tab" type="button">Commodities, Índices, Criptografia, Ações</button></li>
+            </ul>
+    
+            <div class="tab-content mt-20 mb-70" id="depoWithdrawContent" style="margin: 50px 0;background: #FFF;padding: 50px;opacity: .7;border-radius: 20px;box-shadow: 1px 1px 6px 1px rgb(0 0 0 / 37%);-webkit-box-shadow: 1px 1px 6px 1px rgb(0 0 0 / 37%);-moz-box-shadow: 1px 1px 6px 1px rgba(0,0,0,0.37);border: 1px solid #eeeeee;">
+                <div aria-labelledby="frx-tab" class="tab-pane fade show active" id="frx" role="tabpanel">
+                    <div class="box">
+                        <div class="table-responsive">
+                            <p>Se a moeda de sua conta for diferente da moeda base do par negociado.<br />
+                                Margem necessária = Tamanho do lote * Tamanho do contrato / Alavancagem * taxa de câmbio da moeda da conta</p>
+    
+                            <p>Exemplo: Negociação de 1 lote de EUR/USD usando alavancagem de 1:100 com uma conta denominada em<strong>USD</strong>.<br />
+                                1 * 100000 / 100 * 1,05280 (taxa atual do EUR/USD) = US$ 1.052,80</p>
+    
+                            <p>Se sua conta for denominada em dólares americanos e a moeda base do par negociado também for em dólares americanos</p>
+    
+                            <p>Exemplo: Negociação de 3 lotes de USD/JPY usando alavancagem de 1:100 com uma conta denominada em <strong>USD</strong>.<br />
+                                3 * 100000 / 100 = $3,000</p>
+    
+                            <p>Ao converter valores de uma moeda para outra, você precisa multiplicar ou dividir pela taxa de câmbio atual.</p>
+    
+                            <ul>
+                                <li> Se você quiser converter da moeda base para a moeda cotada, multiplique pela taxa de câmbio atual.</li>
+                                <li>Se quiser converter da moeda cotada para a base, você deve dividir pela taxa de câmbio da moeda.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+    
+                <div aria-labelledby="cics-tab" class="tab-pane fade" id="cics" role="tabpanel">
+                    <div class="box">
+                        <div class="table-responsive">
+                            <p>Margem necessária = Tamanho do lote * Tamanho do contrato * Preço de mercado / alavancagem</p>
+    
+                            <p>Exemplo: Negociação de 1 lote (100 Oz) de XAU/USD usando alavancagem de 1:200 com uma conta denominada em USD. (Preço de mercado atual: 1777,60)<br />
+                                1 * 100 * 1777.60 / 200 = $888.8</p>
+    
+                            <p>Exemplo: Negociação de 1 lote (100 Oz) de XAU/USD usando alavancagem de 1:200 com uma conta denominada em EUR. (Preço de mercado atual: 1777,60)<br />
+                                1 * 100 * 1777,60 / 200 / 1,0528 (taxa atual do EUR/USD) = € 844,22</p>
+    
+                            <p>Exemplo: Negociação de 1 unidade de BTC/USD usando alavancagem de 1:50 com uma conta denominada em <strong>USD</strong>. (Preço de mercado atual: 16843,35)<br />
+                                1 * 1 * 16843.35 / 50 = $336.87</p>
+    
+                            <p>Exemplo: Negociar 1 unidade de BTC/USD usando alavancagem de 1:50 com uma conta denominada em <strong>EUR</strong>. (Preço de mercado atual: 16843,35)<br />
+                                1 * 1 * 16843,35 / 50 / 1,05344 (taxa atual do EUR/USD) = € 319,77</p>
+    
+                            <ul>
+                                <li><strong>Tamanho do lote</strong> -  é o volume de sua posiçãoContrato</li>
+                                <li><strong>Tamanho</strong> - é o número real de unidades de um ativo em sua posição</li>
+                                <li><strong>Alavancagem</strong> - é o nível de alavancagem aplicável à sua conta ou símbolo de negociação.</li>
+                                <li><strong>Preço de mercado</strong> - é o preço no qual sua posição é colocada</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="row faq justify-content-center content mt-30 mb-50">
+            <div class="col-10">
+                <h1>Perguntas frequentes</h1>
+    
+                <ul class="faq-list">
+                    <li>
+                        <div class="collapsed question" data-bs-toggle="collapse" href="#faq1">
+                            <h2>Qual é a definição de margem livre?</h2>
+                            <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+    
+                        <div class="collapse" data-bs-parent=".faq-list" id="faq1">
+                            <p>
+                                Em sua definição mais simples, a Margem Livre é o dinheiro em uma conta de negociação que está disponível para negociação. Para calcular a margem livre, você deve subtrair a margem de suas posições abertas de seu patrimônio líquido (ou seja, seu saldo mais ou menos qualquer lucro/perda de posições abertas). Por exemplo, se alguém com um saldo de US$ 10.000 fosse comprar 2 lotes de EURUSD à taxa de câmbio de 1,20000, ele precisaria de US$ 240.000 (200.000 X 1,2000). Sua margem necessária para essa posição seria de 240.000/50 = US$ 4800. Agora, digamos que o preço do EURUSD caia para 1,19050 depois que ele entrou na negociação. Isso significaria que ele sofreu uma perda de 0,00950 pips (1,20000 - 1,19050), o que equivale a US$ 2.280 (US$ 240.000 X 0,00950). Portanto, usando a fórmula da margem livre, a margem livre do trader nesse caso seria o patrimônio líquido (US$ 10.000 - US$ 2.280) menos a margem (US$ 4.800) = US$ 2.920.
+                            </p>   
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsed question" data-bs-toggle="collapse" href="#faq2">
+                            <h2>Qual é a definição de nível de margem?</h2>
+                            <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+    
+                        <div class="collapse" data-bs-parent=".faq-list" id="faq2">
+                           <p>O nível de margem indica o grau de "saúde" de sua conta de negociação. É a relação entre seu patrimônio líquido e a margem usada de suas posições abertas, indicada como uma porcentagem. Como fórmula, o nível de margem tem a seguinte aparência: (Patrimônio Líquido/Margem Usada) X 100. Digamos que um trader tenha um patrimônio líquido de US$ 5.000 e tenha usado US$ 1.000 de margem. Seu nível de margem, nesse caso, seria (US$ 5.000/US$ 1.000) X 100 = 500%. Essa é uma conta muito saudável! Uma boa maneira de saber se sua conta está saudável ou não é certificar-se de que seu nível de margem esteja sempre acima de 100%.</p>    </div>
+                    </li>
+                    <li>
+                        <div class="collapsed question" data-bs-toggle="collapse" href="#faq3">
+                            <h2>O que é uma chamada de margem?</h2>
+                            <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+    
+                        <div class="collapse" data-bs-parent=".faq-list" id="faq3">
+                            <p>Uma chamada de margem é o termo usado para descrever o alerta enviado a um operador para notificá-lo de que o capital em sua conta caiu abaixo do valor mínimo necessário para manter uma posição aberta. Uma chamada de margem pode significar que o operador precisa colocar fundos adicionais para equilibrar a conta ou fechar posições para reduzir a margem de manutenção necessária.
+                            </p>
+                            <p>A chamada de margem também pode ser usada para descrever o status de sua conta - ou seja, você está "em chamada de margem" porque os fundos em sua conta estão abaixo da exigência de margem.
+                            </p>  
+                            <p>Quando você negocia com produtos alavancados, como CFDs, há dois tipos de margem: uma margem de depósito, necessária para abrir a posição, e uma margem de manutenção, necessária para manter a posição aberta. É a falha em manter a última que acionará uma chamada de margem.
+                            </p> 
+                            <p>Se uma operação começar a perder dinheiro, os fundos em sua conta podem não ser mais suficientes para manter a posição aberta e o provedor solicitará que você recarregue sua conta para que seu saldo atinja a margem mínima - essa notificação é uma chamada de margem. Se você depositar seus fundos, a posição permanecerá aberta. Caso contrário, seu provedor poderá fechar a posição e quaisquer perdas incorridas serão realizadas.
+                            </p>
+                            <p>O termo chamada de margem surgiu da prática de os corretores ligarem para seus clientes para notificá-los sobre o déficit da conta. Atualmente, porém, a maioria das chamadas de margem é enviada por e-mail.</p>  </div>
+                    </li>
+                    <li>
+                        <div class="collapsed question" data-bs-toggle="collapse" href="#faq4">
+                            <h2>O que é um Stop Out?</h2>
+                            <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+    
+                        <div class="collapse" data-bs-parent=".faq-list" id="faq4">
+                           <p>
+                            Um nível de stop out no forex é um ponto predefinido de "nível de margem" em que as posições abertas de um trader serão fechadas para evitar um saldo negativo na conta. O nível de margem % significa quanto patrimônio líquido você tem em comparação com sua margem. O uso da alavancagem desempenha um papel importante nisso, pois quanto mais alavancagem você usar, menos margem estará usando para garantir a(s) posição(ões), deixando mais patrimônio livre. Esse é outro motivo pelo qual o uso excessivo de alavancagem é arriscado. Você pode perder potencialmente mais de seu patrimônio antes de atingir o stop out, eliminando efetivamente a maior parte de sua conta.
+                           </p>  </div>
+                    </li>
+                </ul>
+                <a class="btn-get-started mt-50" href="faq">Clique aqui para obter mais FAQs</a></div>
+        </div>
+    </div>
+    </section>
+    </main>
+    

@@ -1,0 +1,33 @@
+<style type="text/css">div#popupBanner {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+</style>
+<div aria-labelledby="bnn1Label" aria-modal="true" class="modal modal-lg fade" id="popupBanner" role="dialog" style="display: none;" tabindex="-1">
+	<div class="modal-dialog modal-dialog-centered" style="max-width: 600px;">
+		<div class="modal-content" style="background-color: transparent; border: none;">
+			<div class="modal-header" style="border-bottom: none; position: relative;">
+				<h1 class="modal-title fs-5" id="bnn1Label">&nbsp;</h1>
+				<button aria-label="Close" class="btn-close" data-bs-dismiss="modal" style="background-color: #f9d24e;opacity: 0.9 ;position: absolute; top: 85px; right: 35px; z-index: 9999;" type="button"></button></div>
+
+			<div class="modal-body">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 a-wb"><a class="url_popup" href="https://www.youtube.com/playlist?list=PLkkl7dXfeatapaTLXmaxv2we5jP8tBrUJ" target="_blank"><img class="img-fluid popup-banner-img" src="https://cdn.learnwurks.com/assets/img/Popup-banner/PODCAST-POPUP.jpg" /></a></div>
+
+						<div class="col-12 a-mb"><a class="url_popup" href="https://www.youtube.com/playlist?list=PLkkl7dXfeatapaTLXmaxv2we5jP8tBrUJ" target="_blank"><img class="img-fluid popup-banner-img" src="https://cdn.learnwurks.com/assets/img/Popup-banner/PODCAST-POPUP.jpg" /> </a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script><script type="text/javascript">
+    $(document).ready(function () {
+		var cc = sessionStorage.getItem('country_code');
+        setTimeout(function () {
+            //if (cc === 'MY') {
+                $('#popupBanner').modal('show');
+           // }
+        }, 15000); 
+    });
+</script>

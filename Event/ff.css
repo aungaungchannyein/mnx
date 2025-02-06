@@ -1,0 +1,150 @@
+<style>
+.custom-card-style {
+        flex-direction: row;
+        padding: 15px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        background: #f9f9f9;
+      }
+      img.card-img-top {
+        width: 150px;
+        height: 150px;
+      }
+      h5.card-title.title-custom {
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      .calendar-icon {
+        width: 40px;
+        margin: 0 auto;
+        color: #fad65a;
+      }
+      .btn-custom-event {
+        background-color: #fad65a;
+        font-weight: bold;
+        border-radius: 30px;
+        width: 100%;
+        padding: 10px;
+        font-size: 18px;
+      }
+      .btn-custom-popup {
+        background-color: #fad65a;
+        font-weight: bold;
+        border-radius: 30px;
+        width: 100%;
+        padding: 10px;
+        font-size: 18px;
+      }
+      .event-global {
+        width: 20px;
+        margin-right: 10px;
+        color: #fad65a;
+      }
+      small.text-muted.small-text-custom {
+        font-weight: 600;
+        color: black !important;
+        display: block;
+        font-size: 16px;
+        text-align: center;
+      }
+      .globe {
+        display: flex;
+        justify-content: center;
+        font-weight: 600;
+        margin: 5px 0;
+      }
+      .column {
+        margin: 0 20px;
+        width: 400px;
+      }
+      .card-body.body-custom {
+        width: 45%;
+        padding: 5px 20px;
+      }
+      .row-second.column {
+        margin-top: 10px;
+      }
+      .row-third.column {
+        align-items: center;
+        display: flex;
+      }
+      .select-custom-event {
+        border-radius: 30px;
+        padding: 10px 20px;
+        border: 2px solid #fad65a;
+      }
+      .control_event {
+        display: flex;
+        width: 50%;
+        margin: 0px auto 80px
+      }
+      .control_event .select-custom-event {
+        margin: 0 15px;
+      }
+.btn_div_event {
+        cursor: pointer;
+        padding: 10px;
+        border: 1px solid #fad65a;
+        text-align: center;
+        border-radius: 40px;
+        background: #fad65a;
+        font-weight: 600;
+        font-size: 17px;
+        width: 20%;
+        margin: 10px auto;
+      }
+@media screen and (max-width: 992px) {
+        .control_event {
+          width: 100%;
+          margin: 80px auto 80px;
+        }
+        div#dom_section {
+          display: grid;
+          grid-template-columns: auto auto;
+          gap: 20px;
+          width: 100%;
+          margin: 0 auto;
+        }
+        .custom-card-style {
+          flex-direction: column;
+          padding: 15px;
+          border-radius: 10px;
+          margin-bottom: 30px;
+          background: #f9f9f9;
+          width: 100%;
+          align-items: normal !important;
+        }
+        img.card-img-top {
+          width: 100%;
+          height: auto;
+        }
+        .card-body.body-custom {
+          width: 100%;
+          padding: 30px 5px;
+          text-align: center;
+        }
+        .row-second.column {
+          margin-top: 0;
+          margin-bottom: 20px;
+          width: 100%;
+          margin-left: 0;
+          margin-right: 0;
+        }
+        .row-third.column {
+          align-items: center;
+          display: flex;
+          width: 100%;
+          margin: 25px 0 !important;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        .btn_div_event {
+          width: 100%;
+        }
+        div#dom_section {
+          display: block;
+          width: 75%;
+        }
+      }
+</style>

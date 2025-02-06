@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner Popup Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- <div class="home-content">
+        <h1>Welcome to My Website</h1>
+        <p>Enjoy browsing our content!</p>
+    </div> -->
+
+    <!-- Popup container -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <a href="https://www.youtube.com/playlist?list=PLkkl7dXfeatapaTLXmaxv2we5jP8tBrUJ"><img src="PODCAST-POPUP-02.jpg" alt="Banner Image"></a>
+        </div>
+    </div>
+
+    <script>
+        // Function to close the popup
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+    </script>
+</body>
+</html>

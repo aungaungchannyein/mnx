@@ -1,0 +1,880 @@
+steps:
+    applications.questionnaire.step1:
+        config:
+            defaultValidators:
+                - required
+                - english
+            label: 'Company Information Details'
+        fields:
+            entity_type:
+                label: 'Entity Type'
+                choices:
+                    - 'Company'
+                    - 'Trust'
+                    - 'Foundation'  
+            company_registration_number:
+                label: 'Company Registration Number'
+            country_of_incorporation:
+                label: 'Country of Incorporation/Jurisdiction'
+                choices:
+                    - Afghanistan
+                    - Albania
+                    - Algeria
+                    - Andorra
+                    - Angola
+                    - Antigua and Barbuda
+                    - Argentina
+                    - Armenia
+                    - Australia
+                    - Austria
+                    - Azerbaijan
+                    - Bahamas
+                    - Bahrain
+                    - Bangladesh
+                    - Barbados
+                    - Belarus
+                    - Belgium
+                    - Belize
+                    - Benin
+                    - Bhutan
+                    - Bolivia
+                    - Bosnia and Herzegovina
+                    - Botswana
+                    - Brazil
+                    - Brunei
+                    - Bulgaria
+                    - Burkina Faso
+                    - Burundi
+                    - Cambodia
+                    - Cameroon
+                    - Canada
+                    - Cape Verde
+                    - Central African Republic
+                    - Chad
+                    - Chile
+                    - China
+                    - Colombia
+                    - Comoros
+                    - Congo (Brazzaville)
+                    - Congo (Kinshasa)
+                    - Costa Rica
+                    - Croatia
+                    - Cuba
+                    - Cyprus
+                    - Czech Republic
+                    - Denmark
+                    - Djibouti
+                    - Dominica
+                    - Dominican Republic
+                    - East Timor
+                    - Ecuador
+                    - Egypt
+                    - El Salvador
+                    - Equatorial Guinea
+                    - Eritrea
+                    - Estonia
+                    - Eswatini
+                    - Ethiopia
+                    - Fiji
+                    - Finland
+                    - France
+                    - Gabon
+                    - Gambia
+                    - Georgia
+                    - Germany
+                    - Ghana
+                    - Greece
+                    - Grenada
+                    - Guatemala
+                    - Guinea
+                    - Guinea-Bissau
+                    - Guyana
+                    - Haiti
+                    - Honduras
+                    - Hungary
+                    - Iceland
+                    - India
+                    - Indonesia
+                    - Iran
+                    - Iraq
+                    - Ireland
+                    - Israel
+                    - Italy
+                    - Jamaica
+                    - Japan
+                    - Jordan
+                    - Kazakhstan
+                    - Kenya
+                    - Kiribati
+                    - Korea, North
+                    - Korea, South
+                    - Kosovo
+                    - Kuwait
+                    - Kyrgyzstan
+                    - Laos
+                    - Latvia
+                    - Lebanon
+                    - Lesotho
+                    - Liberia
+                    - Libya
+                    - Liechtenstein
+                    - Lithuania
+                    - Luxembourg
+                    - Madagascar
+                    - Malawi
+                    - Malaysia
+                    - Maldives
+                    - Mali
+                    - Malta
+                    - Marshall Islands
+                    - Mauritania
+                    - Mauritius
+                    - Mexico
+                    - Micronesia
+                    - Moldova
+                    - Monaco
+                    - Mongolia
+                    - Montenegro
+                    - Morocco
+                    - Mozambique
+                    - Myanmar (Burma)
+                    - Namibia
+                    - Nauru
+                    - Nepal
+                    - Netherlands
+                    - New Zealand
+                    - Nicaragua
+                    - Niger
+                    - Nigeria
+                    - North Macedonia
+                    - Norway
+                    - Oman
+                    - Pakistan
+                    - Palau
+                    - Panama
+                    - Papua New Guinea
+                    - Paraguay
+                    - Peru
+                    - Philippines
+                    - Poland
+                    - Portugal
+                    - Qatar
+                    - Romania
+                    - Russia
+                    - Rwanda
+                    - Saint Kitts and Nevis
+                    - Saint Lucia
+                    - Saint Vincent and the Grenadines
+                    - Samoa
+                    - San Marino
+                    - Sao Tome and Principe
+                    - Saudi Arabia
+                    - Senegal
+                    - Serbia
+                    - Seychelles
+                    - Sierra Leone
+                    - Singapore
+                    - Slovakia
+                    - Slovenia
+                    - Solomon Islands
+                    - Somalia
+                    - South Africa
+                    - South Sudan
+                    - Spain
+                    - Sri Lanka
+                    - Sudan
+                    - Suriname
+                    - Sweden
+                    - Switzerland
+                    - Syria
+                    - Taiwan
+                    - Tajikistan
+                    - Tanzania
+                    - Thailand
+                    - Togo
+                    - Tonga
+                    - Trinidad and Tobago
+                    - Tunisia
+                    - Turkey
+                    - Turkmenistan
+                    - Tuvalu
+                    - Uganda
+                    - Ukraine
+                    - United Arab Emirates
+                    - United Kingdom
+                    - United States
+                    - Uruguay
+                    - Uzbekistan
+                    - Vanuatu
+                    - Vatican City
+                    - Venezuela
+                    - Vietnam
+                    - Yemen
+                    - Zambia
+                    - Zimbabwe
+            date_of_incorporation:
+                label: 'Date of Incorporation'
+                date: true
+            registrar:
+                label: 'Registrar/Relevant Authority'
+                description: 'if your entity is regulated by a recognised institution/regulatory body.'
+            nature_of_business:
+                label: 'Nature of Business'
+                choices: 
+                    - 'Arms and Weapons of Mass Destruction'
+                    - 'Business activities likely to cause Environmental Damage'
+                    - 'Business involving PEP / Military figures'
+                    - 'Cash intensive businesses' 
+                    - 'Casinos & Business Related to Gambling'
+                    - 'Charities and Non-profit organisations'
+                    - 'Construction industry'
+                    - 'Fintech, digital currency brokering or trading'
+                    - 'Gatekeepers : Legal Representatives, Accountants, Auditors, Investment advisors'
+                    - 'Government'
+                    - 'High value goods dealers (including art and antique dealers, auction houses)'
+                    - 'Investment Advisory / Asset Management services'
+                    - 'Investment and Commodity Advisers'
+                    - 'Live Animal Testing'
+                    - 'Mineral of Oil Extraction and Mining'
+                    - 'Money Remitters and Money Exchange Houses'
+                    - 'Money Service Businesses (MSB)'
+                    - 'New or Innovative type of Business'
+                    - 'Non Licenced Asset Management Activities'
+                    - 'Non Licenced Financial Services Business'
+                    - 'Pharmaceutical industry'
+                    - 'Private military firms'
+                    - 'Precious Metals and Stones, jewellery'
+                    - 'Public procurement'
+                    - 'Real estate brokers and sales representatives'
+                    - 'Supra-National Organisations'
+                    - 'Travel Agencies'
+                    - "Traveller's Cheques Providers"
+                    - 'Trust Service Providers'
+                    - 'Unlicensed Mobile Phones'
+                    - 'Vehicle Sellers'
+                    - 'Other'
+            other_nature_of_business:
+                label: 'Please specify Business'
+                validators:
+                    requiredIf: { nature_of_business: [Other] }   
+            source_of_funds:
+                label: 'Source of Funds'
+                choices: 
+                    - 'Equity'
+                    - 'Profit'
+                    - 'Revenue'
+                    - "Shareholders’ Funds"
+                    - "Initial Coin Offering (ICO) / IPO"
+                    - 'Government Support'
+                    - 'Gift'
+                    - 'Sale of Property'
+                    - 'Sale / Liquidation of Investment'
+                    - 'Loans'
+                    - 'Other'
+            other_source_of_funds:
+                label: 'Please specify Source of Funds'
+                validators:
+                    requiredIf: { source_of_funds: [Other] }
+            tax_residency:
+                label: 'Tax Residency'
+                choices:
+                    - Afghanistan
+                    - Albania
+                    - Algeria
+                    - Andorra
+                    - Angola
+                    - Antigua and Barbuda
+                    - Argentina
+                    - Armenia
+                    - Australia
+                    - Austria
+                    - Azerbaijan
+                    - Bahamas
+                    - Bahrain
+                    - Bangladesh
+                    - Barbados
+                    - Belarus
+                    - Belgium
+                    - Belize
+                    - Benin
+                    - Bhutan
+                    - Bolivia
+                    - Bosnia and Herzegovina
+                    - Botswana
+                    - Brazil
+                    - Brunei
+                    - Bulgaria
+                    - Burkina Faso
+                    - Burundi
+                    - Cambodia
+                    - Cameroon
+                    - Canada
+                    - Cape Verde
+                    - Central African Republic
+                    - Chad
+                    - Chile
+                    - China
+                    - Colombia
+                    - Comoros
+                    - Congo (Brazzaville)
+                    - Congo (Kinshasa)
+                    - Costa Rica
+                    - Croatia
+                    - Cuba
+                    - Cyprus
+                    - Czech Republic
+                    - Denmark
+                    - Djibouti
+                    - Dominica
+                    - Dominican Republic
+                    - East Timor
+                    - Ecuador
+                    - Egypt
+                    - El Salvador
+                    - Equatorial Guinea
+                    - Eritrea
+                    - Estonia
+                    - Eswatini
+                    - Ethiopia
+                    - Fiji
+                    - Finland
+                    - France
+                    - Gabon
+                    - Gambia
+                    - Georgia
+                    - Germany
+                    - Ghana
+                    - Greece
+                    - Grenada
+                    - Guatemala
+                    - Guinea
+                    - Guinea-Bissau
+                    - Guyana
+                    - Haiti
+                    - Honduras
+                    - Hungary
+                    - Iceland
+                    - India
+                    - Indonesia
+                    - Iran
+                    - Iraq
+                    - Ireland
+                    - Israel
+                    - Italy
+                    - Jamaica
+                    - Japan
+                    - Jordan
+                    - Kazakhstan
+                    - Kenya
+                    - Kiribati
+                    - Korea, North
+                    - Korea, South
+                    - Kosovo
+                    - Kuwait
+                    - Kyrgyzstan
+                    - Laos
+                    - Latvia
+                    - Lebanon
+                    - Lesotho
+                    - Liberia
+                    - Libya
+                    - Liechtenstein
+                    - Lithuania
+                    - Luxembourg
+                    - Madagascar
+                    - Malawi
+                    - Malaysia
+                    - Maldives
+                    - Mali
+                    - Malta
+                    - Marshall Islands
+                    - Mauritania
+                    - Mauritius
+                    - Mexico
+                    - Micronesia
+                    - Moldova
+                    - Monaco
+                    - Mongolia
+                    - Montenegro
+                    - Morocco
+                    - Mozambique
+                    - Myanmar (Burma)
+                    - Namibia
+                    - Nauru
+                    - Nepal
+                    - Netherlands
+                    - New Zealand
+                    - Nicaragua
+                    - Niger
+                    - Nigeria
+                    - North Macedonia
+                    - Norway
+                    - Oman
+                    - Pakistan
+                    - Palau
+                    - Panama
+                    - Papua New Guinea
+                    - Paraguay
+                    - Peru
+                    - Philippines
+                    - Poland
+                    - Portugal
+                    - Qatar
+                    - Romania
+                    - Russia
+                    - Rwanda
+                    - Saint Kitts and Nevis
+                    - Saint Lucia
+                    - Saint Vincent and the Grenadines
+                    - Samoa
+                    - San Marino
+                    - Sao Tome and Principe
+                    - Saudi Arabia
+                    - Senegal
+                    - Serbia
+                    - Seychelles
+                    - Sierra Leone
+                    - Singapore
+                    - Slovakia
+                    - Slovenia
+                    - Solomon Islands
+                    - Somalia
+                    - South Africa
+                    - South Sudan
+                    - Spain
+                    - Sri Lanka
+                    - Sudan
+                    - Suriname
+                    - Sweden
+                    - Switzerland
+                    - Syria
+                    - Taiwan
+                    - Tajikistan
+                    - Tanzania
+                    - Thailand
+                    - Togo
+                    - Tonga
+                    - Trinidad and Tobago
+                    - Tunisia
+                    - Turkey
+                    - Turkmenistan
+                    - Tuvalu
+                    - Uganda
+                    - Ukraine
+                    - United Arab Emirates
+                    - United Kingdom
+                    - United States
+                    - Uruguay
+                    - Uzbekistan
+                    - Vanuatu
+                    - Vatican City
+                    - Venezuela
+                    - Vietnam
+                    - Yemen
+                    - Zambia
+                    - Zimbabwe
+            tax_identification_number:
+                label: 'Tax Identification Number (TIN)'
+    applications.questionnaire.step2:
+        config:
+            defaultValidators:
+                - required
+                - english
+            label: 'Shareholders / Ultimate Beneficial Owner (UBO) Details'
+        fields:
+            title:
+                label: 'Title'
+                choices:
+                    - 'Mr'
+                    - 'Ms'
+                    - 'Mrs'
+            first_name:
+                label: 'First Name'
+            last_name:
+                label: 'Last Name'
+            date_of_birth:
+                label: 'Date of Birth'
+                date: true
+            phone_number:
+                label: 'Phone Number'
+                # regex:
+                #     pattern: '^\+?[0-9\s\-]+$'
+            country_of_residence:
+                label: 'Country of Residence'
+                choices:
+                    - Afghanistan
+                    - Albania
+                    - Algeria
+                    - Andorra
+                    - Angola
+                    - Antigua and Barbuda
+                    - Argentina
+                    - Armenia
+                    - Australia
+                    - Austria
+                    - Azerbaijan
+                    - Bahamas
+                    - Bahrain
+                    - Bangladesh
+                    - Barbados
+                    - Belarus
+                    - Belgium
+                    - Belize
+                    - Benin
+                    - Bhutan
+                    - Bolivia
+                    - Bosnia and Herzegovina
+                    - Botswana
+                    - Brazil
+                    - Brunei
+                    - Bulgaria
+                    - Burkina Faso
+                    - Burundi
+                    - Cambodia
+                    - Cameroon
+                    - Canada
+                    - Cape Verde
+                    - Central African Republic
+                    - Chad
+                    - Chile
+                    - China
+                    - Colombia
+                    - Comoros
+                    - Congo (Brazzaville)
+                    - Congo (Kinshasa)
+                    - Costa Rica
+                    - Croatia
+                    - Cuba
+                    - Cyprus
+                    - Czech Republic
+                    - Denmark
+                    - Djibouti
+                    - Dominica
+                    - Dominican Republic
+                    - East Timor
+                    - Ecuador
+                    - Egypt
+                    - El Salvador
+                    - Equatorial Guinea
+                    - Eritrea
+                    - Estonia
+                    - Eswatini
+                    - Ethiopia
+                    - Fiji
+                    - Finland
+                    - France
+                    - Gabon
+                    - Gambia
+                    - Georgia
+                    - Germany
+                    - Ghana
+                    - Greece
+                    - Grenada
+                    - Guatemala
+                    - Guinea
+                    - Guinea-Bissau
+                    - Guyana
+                    - Haiti
+                    - Honduras
+                    - Hungary
+                    - Iceland
+                    - India
+                    - Indonesia
+                    - Iran
+                    - Iraq
+                    - Ireland
+                    - Israel
+                    - Italy
+                    - Jamaica
+                    - Japan
+                    - Jordan
+                    - Kazakhstan
+                    - Kenya
+                    - Kiribati
+                    - Korea, North
+                    - Korea, South
+                    - Kosovo
+                    - Kuwait
+                    - Kyrgyzstan
+                    - Laos
+                    - Latvia
+                    - Lebanon
+                    - Lesotho
+                    - Liberia
+                    - Libya
+                    - Liechtenstein
+                    - Lithuania
+                    - Luxembourg
+                    - Madagascar
+                    - Malawi
+                    - Malaysia
+                    - Maldives
+                    - Mali
+                    - Malta
+                    - Marshall Islands
+                    - Mauritania
+                    - Mauritius
+                    - Mexico
+                    - Micronesia
+                    - Moldova
+                    - Monaco
+                    - Mongolia
+                    - Montenegro
+                    - Morocco
+                    - Mozambique
+                    - Myanmar (Burma)
+                    - Namibia
+                    - Nauru
+                    - Nepal
+                    - Netherlands
+                    - New Zealand
+                    - Nicaragua
+                    - Niger
+                    - Nigeria
+                    - North Macedonia
+                    - Norway
+                    - Oman
+                    - Pakistan
+                    - Palau
+                    - Panama
+                    - Papua New Guinea
+                    - Paraguay
+                    - Peru
+                    - Philippines
+                    - Poland
+                    - Portugal
+                    - Qatar
+                    - Romania
+                    - Russia
+                    - Rwanda
+                    - Saint Kitts and Nevis
+                    - Saint Lucia
+                    - Saint Vincent and the Grenadines
+                    - Samoa
+                    - San Marino
+                    - Sao Tome and Principe
+                    - Saudi Arabia
+                    - Senegal
+                    - Serbia
+                    - Seychelles
+                    - Sierra Leone
+                    - Singapore
+                    - Slovakia
+                    - Slovenia
+                    - Solomon Islands
+                    - Somalia
+                    - South Africa
+                    - South Sudan
+                    - Spain
+                    - Sri Lanka
+                    - Sudan
+                    - Suriname
+                    - Sweden
+                    - Switzerland
+                    - Syria
+                    - Taiwan
+                    - Tajikistan
+                    - Tanzania
+                    - Thailand
+                    - Togo
+                    - Tonga
+                    - Trinidad and Tobago
+                    - Tunisia
+                    - Turkey
+                    - Turkmenistan
+                    - Tuvalu
+                    - Uganda
+                    - Ukraine
+                    - United Arab Emirates
+                    - United Kingdom
+                    - United States
+                    - Uruguay
+                    - Uzbekistan
+                    - Vanuatu
+                    - Vatican City
+                    - Venezuela
+                    - Vietnam
+                    - Yemen
+                    - Zambia
+                    - Zimbabwe
+            address:
+                label: 'Address'
+            city:
+                label: 'City/Town'
+            state:
+                label: 'State/Province'
+            postal:
+                label: 'Postal/Zip'
+                type: number
+            ownership:
+                label: 'Ownership(%)'
+            source_of_funds:
+                label: 'Source of Funds'
+                choices:
+                    - 'Savings'
+                    - 'Pension'
+                    - 'Dividends'
+                    - 'Family Support'
+                    - 'Loans'
+                    - 'Government Support'
+                    - 'Gift'
+                    - 'Inheritance'
+                    - 'Sale of Property'
+                    - 'Income from Employment / Self-Employment'
+                    - 'Sale / Liquidation of Investment'
+                    - 'Tax Refund'
+                    - 'Other'
+            other_source_of_funds:
+                label: 'Please specify Source of Funds'
+                validators:
+                    requiredIf: { source_of_funds: [Other] }
+            source_of_wealth:
+                label: 'Source of Wealth'
+                choices:
+                    - 'Savings'
+                    - 'Pension'
+                    - 'Dividends'
+                    - 'Family Support'
+                    - 'Loans'
+                    - 'Government Support'
+                    - 'Gift'
+                    - 'Inheritance'
+                    - 'Sale of Property'
+                    - 'Income from Employment / Self-Employment'
+                    - 'Sale / Liquidation of Investment'
+                    - 'Tax Refund'
+                    - 'Other'
+            other_source_of_wealth:
+                label: 'Please specify Source of Wealth'
+                validators:
+                    requiredIf: { source_of_wealth: [Other] }
+    applications.questionnaire.step3:
+        config:
+            defaultValidators:
+                - required
+                - english
+            label: 'Trading Knowledge and Experience'
+        fields:
+            experience_in_trading_cfds:    
+                label: "Experience in trading CFDs (Forex, Metal, Commodities, Stock)"
+                choices:
+                    - 'Advanced'
+                    - 'Intermediate'
+                    - 'Beginner'
+                    - 'No Experience'
+    applications.questionnaire.step4:
+        config:
+            defaultValidators:
+                - required
+                - english
+            label: 'Declarations'
+        fields:
+            experience_in_trading_cfds:    
+                label: "Have you or any of the Directors/Shareholders/UBOs of the Company, ever been convicted of a crime or have any outstanding criminal charges against you/them?"
+                choices:
+                    - 'No'
+                    - 'Yes'
+            more_details:
+                label: 'Please provide more details'
+                validators:
+                    requiredIf: { experience_in_trading_cfds: [Yes] }
+            politically_exposed:    
+                label: "Are you a Politically Exposed Person (PEP) or related to a PEP? "
+                choices:
+                    - 'No'
+                    - 'Yes'
+            more_politically_exposed:
+                label: 'Please provide further clarifications for your position or your relationship with a Politically Exposed Person'
+                validators:
+                    requiredIf: { politically_exposed: [Yes] }
+            meet_criteria:    
+                label: "Does your business structure meet the criteria of a Financial Institution? "
+                choices:
+                    - 'No'
+                    - 'Yes'
+                validators:
+                    equalTo: { value: 'No', message: 'Our services are not accessible to U.S. taxpayer entities' }
+            active_nffe:
+                label: 'Is your entity a publicly traded non-financial foreign entity ( or affiliate) excepted territory NFFE or active NFFE?'
+                choices:
+                    - 'No'
+                    - 'Yes'
+                validators:
+                    requiredIf: { meet_criteria : [No] }
+                    equalTo: { value: 'No', message: 'Our services are not accessible to U.S. taxpayer entities' }
+            substantial_number_of_owners:
+                label: 'Does your business have a substantial number of owners who are classified as US citizens or residents for tax purposes?'
+                choices:
+                    - 'No'
+                    - 'Yes'
+                validators:
+                    requiredIf: { active_nffe : [No] }
+                    equalTo: { value: 'No', message: 'Our services are not accessible to U.S. taxpayer entities' }
+            digital_sign:
+                label: "By checking this box I place my digital signature confirming that I am at least 18 years of age and I have read and agree to all Terms and Conditions"
+                checkbox: true
+            # 'Advanced':
+            #   checkbox: true
+            #   optional: true
+            #   options:
+            #     attr: { data-accept-group: experience_in_trading_cfds }
+
+            # 'Intermediate':
+            #   checkbox: true
+            #   optional: true
+            #   options:
+            #     attr: { data-accept-group: experience_in_trading_cfds }
+
+            # 'Beginner':
+            #   checkbox: true
+            #   optional: true
+            #   options:
+            #     attr: { data-accept-group: experience_in_trading_cfds }
+
+            # 'No experience':
+            #   checkbox: true
+            #   optional: true
+            #   options:
+            #     attr: { data-accept-group: experience_in_trading_cfds }
+
+
+    # applications.questionnaire.step3:
+    #     config:
+    #         defaultValidators:
+    #             - required
+    #             - english
+    #         label: 'Trading Knowledge and Experience'
+    #     fields:
+    #         experience_in_trading_cfds:    
+    #             text: "Experience in trading CFDs (Forex, Metal, Commodities, Stock)"
+               
+    #         'Advanced':
+    #           checkbox: false
+    #           options:
+    #             attr: { data-accept-group: experience_in_trading_cfds }
+
+    #         'Intermediate':
+    #           checkbox: false
+    #           options:
+    #             attr: { data-accept-group: experience_in_trading_cfds }
+
+    #         'Beginner':
+    #           checkbox: false
+    #           options:
+    #             attr: { data-accept-group: experience_in_trading_cfds }
+
+    #         'No experience':
+    #           checkbox: false
+    #           options:
+    #             attr: { data-accept-group: experience_in_trading_cfds }
+
+      
+            
+    # applications.questionnaire.step4:
+    #     config:
+    #         defaultValidators:
+    #             - required
+    #             - english
+    #         label: 'Declarations'
+    #     fields:
+           
