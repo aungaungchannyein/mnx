@@ -1,0 +1,430 @@
+<style>
+    :root {
+   --dark-bg: #000000;
+   --dark-slider: #ffffff;
+   --dark-text: #000000;
+   --light-bg: #ffffff;
+   --light-slider: #000000;
+   --light-text: #ffffff;
+   }
+   .a-wb {
+	display: block;
+   }
+   .a-mb {
+	display: none;
+   }
+   body {
+     background-color: var(--light-bg)!important;
+     color: var(--light-text);
+     transition: 0.8s;
+   }
+   /* Set dark mode as default */
+   body.dark-mode {
+     background-color: var(--dark-bg)!important;
+     color: var(--light-text);
+     transition: 0.8s;
+   }
+   #header {
+       height: 80px!important;
+       background: #000000!important;
+   }
+   /* #header .logo img {
+       transform: scale(1.2)!important;
+   } */
+   #header a.btn.btn-primary {
+       background-color: #ffce38!important;
+       font-weight: 900!important;
+       border-radius: 60px!important;
+       padding: 6px 25px!important;
+       border-color: transparent!important;
+   }
+   #header a.btn.btn-primary:hover {
+       background-color: #ffd863!important;
+       border-color: transparent!important;
+   }
+   #header a.btn.btn-outline-primary {
+       font-weight: 900!important;
+       border-radius: 60px!important;
+       padding: 6px 25px!important;
+   }
+   #header a.btn.btn-outline-primary:hover {
+       background-color: #ffd863!important;
+       border-color: transparent!important;
+   }
+   .nav-separate {
+       opacity: 0;
+   }
+   .navbar a {
+       font-weight: 600!important;
+   }
+.navbar li.nav-acd:hover>a {
+    color: blue!important;
+}
+   .no-padding {  
+       padding: 0px!important;
+   }
+   .pt-3s {
+       padding-top: 3%!important;
+   }
+   .pt-5s {
+       padding-top: 5%!important;
+   }
+   .pt-7s {
+       padding-top: 7%!important;
+   }
+   .pt-10s {
+       padding-top: 10%!important;
+   }
+   .pb-3s {
+       padding-bottom: 3%!important;
+   }
+   .pb-5s {
+       padding-bottom: 5%!important;
+   }
+   .pb-7s {
+       padding-bottom: 7%!important;
+   }
+   .pb-10s {
+       padding-bottom: 10%!important;
+   }
+   .btn-get-started {
+       background-color: #ffce38!important;
+       border-color: transparent!important;
+       border-radius: 60px!important;
+       font-weight: 900!important;
+   }
+   .btn-get-started:hover {
+       background-color: #ffd863!important;
+       border-color: transparent!important;
+   }
+   .btn-learn-more {
+        font-family: "Raleway", sans-serif;
+        font-size: 22px;
+        letter-spacing: 1px;
+        display: inline-block;
+        padding: 12px 28px;
+        transition: 0.5s;
+        background-color: #000000!important;
+        border-color: transparent!important;
+        border-radius: 60px!important;
+        font-weight: 900!important;
+        color: #ffffff!important;
+    }
+    .btn-learn-more:hover {
+        background-color: #3a3a3a!important;
+        border-color: transparent!important;
+        color: #ffffff!important;
+    }
+  body .btn-tab-assets-class.tab-active {
+       background: #ffce38!important;
+       border-color: #ffce38!important;
+       color: #000000!important;
+    }
+    body.dark-mode .btn-tab-assets-class {
+    color: #fff;
+    } 
+   body .btn-tab-assets-class {
+    border-radius: 55px!important;
+    border-color: #ffce38!important;
+    color: #000;
+    background: transparent!important;
+    border-color: #ffce38!important;
+   }
+   .hero-mnx-text {
+       font-size: 2.5em!important; 
+       font-weight: 900!important;
+   }
+   .hero-banner-mnx {
+       width: -webkit-fill-available; 
+       width: 100%; 
+       max-width: 100%; 
+       text-align: center; 
+       padding-top: 80px;
+   }
+   .hero-img-slider-mnx {
+       background-image: url(https://cdn.learnwurks.com/assets/img/mnx-new/home/HeroBanner-Desktop.png) !important;
+       background-color: #ffe9a0;
+       background-size: 100% 100%; /* Set background size to cover entire section */
+       background-repeat: no-repeat;
+       background-position: center center;
+       margin-top: 60px;
+       padding: 60px 0;
+       height: auto;
+       width: 100vw;
+   }
+   body span.title-yellow {
+       color: #ffce39;
+   }
+   body.dark-mode span.title-yellow {
+       color: #f9e187!important;
+   }
+   body .title-main {
+       color: var(--dark-text);
+       font-weight: 900;
+       font-size: 3.3em;
+       line-height: 1.3em;
+   }
+   body.dark-mode .title-main {
+       color: var(--light-text)!important;
+       font-weight: 900;
+   }
+   body .title-color {
+       color: var(--dark-text);
+   }
+   body.dark-mode .title-color {
+       color: var(--light-text)!important;
+   }
+   /* mode slider */
+   .toggle-container {
+       display: flex;
+       align-items: center;
+       margin: 20px;
+   }
+
+   .toggle-checkbox {
+       display: none;
+   }
+
+   .toggle-label {
+       display: flex;
+       align-items: center;
+       cursor: pointer;
+   }
+
+   .toggle-text {
+       margin-right: 10px;
+       color: var(--text-color);
+   }
+
+   .toggle-slider {
+       position: relative;
+       display: inline-block;
+       width: 41px;
+       height: 20px;
+       background-color: var(--light-bg);
+       border: 1px solid var(--dark-bg);
+       border-radius: 13px;
+       transition: background-color 0.3s;
+   }
+
+   .toggle-slider:before {
+       content: "";
+       position: absolute;
+       width: 18px;
+       height: 18px;
+       border-radius: 50%;
+       background-color: var(--light-slider);
+       top: 0px;
+       left: 1px;
+       transition: transform 0.3s;
+   }
+
+   .toggle-checkbox:checked + .toggle-label .toggle-slider {
+    background-color: var(--dark-bg);
+    border: 1px solid #ffffff;
+   }
+
+   .toggle-checkbox:checked + .toggle-label .toggle-slider:before {
+       transform: translateX(24px);
+       background-color: var(--dark-slider);
+       border-color: #ffffff;
+   }
+
+   .mode-text {
+       margin-left: 10px;
+       color: #ffffff;
+       font-size: 13px;
+       font-weight: 600;
+   }
+   li.newmnx-nav {
+       margin-left: 20px;
+       margin-right: 10px;
+   }
+   .filter-bw {
+       filter: grayscale(1);
+   }
+   #instruments .nav-tabs .nav-link.active {
+       background: #ffce38!important;
+   }
+   .full-bleed {
+       width: -webkit-fill-available;
+       width: 100%;
+       max-width: 100%;
+       text-align: center;
+   }
+   #footer .footer-top {
+        padding: 120px 0 30px 0;
+        border-top: 2px solid #212121!important;
+        border-bottom: 2px solid #212121!important;
+    }
+    .newmnx-assets-icon .img-fluid {
+        margin-right: 2%;
+    }
+    .newmnx-flex-center-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .newmnx-center-w130 {
+        width: 130px;
+        text-align: center;
+        padding-top: 10px;
+    }
+    .newmnx-flex-center-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .newmnx-center-w100 {
+        width: 100px;
+        text-align: center;
+        padding-top: 10px;
+    }
+    .newmnx-start-trading-bg {
+        background-color: #faedba;
+        padding: 0px;
+        border-radius: 55px;
+    }
+    .newmnx-withdrawal .client-logo img {
+        filter: grayscale(100);
+        opacity: .7;
+    }
+    .newmnx-withdrawal .client-logo img:hover {
+        filter: none;
+        opacity: 1;
+    }
+    .newmnx-withdrawal .client-logo:hover img {
+        opacity: 1;
+    }
+    .newmnx-withdrawal-flex-center {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .newmnx-withdrawals-flex-center {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .newmnx-withdrawal-bg {
+        background-color: #faedba;
+        padding: 0px;
+        border-radius: 43px;
+        margin-right: 20px;
+    }
+    .newmnx-withdrawals-bg {
+        background-color: #f9e187;
+        padding: 0px;
+        border-radius: 43px;
+        margin-left: 20px;
+    }
+    .newmnx-hover:hover {
+        filter: brightness(0.9);
+    }
+   .slick-dots {
+        bottom: 10%!important;
+    }
+    body.dark-mode .slick-dots li button:before {
+        opacity: .30!important;
+        color: white!important;
+    }
+    body.dark-mode .slick-dots li.slick-active button:before {
+        opacity: .75!important;
+        color: #f7bc5c!important;
+    }
+    .slick-dots li button:before {
+        opacity: .30!important;
+        color: #000000!important;
+    }
+    .img-invert {
+        filter: none;
+    }
+    body.dark-mode .img-invert {
+        filter: invert(1)!important;
+    }
+    @media (min-width: 1200px) {
+        .newmnx-platforms-slider {
+            padding-top: 60px; 
+            background-color:transparent!important; 
+            height: auto!important; 
+            min-height: 900px!important;
+        }
+    }
+    @media (max-width: 1199px) {
+        .newmnx-platforms-slider {
+            padding-top: 60px; 
+            background-color:transparent!important; 
+            height: 700px!important; 
+        }
+    }
+   @media (max-width: 500px) {
+          .trading-tools-indicator-banner {
+    background-image: url(https://cdn.learnwurks.com/assets/img/trading-tools/HeroBanner-M.jpg)!important;
+    background-size: contain!important;
+    background-position: bottom!important;
+    min-height: 550px!important;
+    background-color: #1d1e22!important;
+}
+		.a-wb {
+			display: none;
+		}
+		.a-mb {
+			display: block;
+		}
+       #header {
+           height: 70px!important;
+       }
+       #header .logo img {
+           transform: scale(1)!important;
+       }
+       #header a.btn.btn-primary {
+           padding: 6px 12px!important;
+       }
+       #header a.btn.btn-outline-primary {
+           padding: 6px 12px!important;
+       }
+       .navbar-mobile ul {
+           background-color: #000000!important;
+       }
+       .navbar .dropdown ul a {
+           color: #fff!important;
+       }
+       .navbar a {
+           font-size: 20px;
+       }
+       .hero-banner-mnx { 
+           padding-top: 70px;
+       }
+       .hero-img-slider-mnx {
+           background-image: url(https://cdn.learnwurks.com/assets/img/mnx-new/home/HeroBanner-Mobile.png) !important;
+           background-color: #141414;
+           background-size: cover;
+           background-repeat: no-repeat;
+           background-position: center !important;
+           margin-top: 60px;
+           padding: 60px 0;
+           min-height: 650px;
+       }
+       li.newmnx-nav {
+           margin-top: 20px;
+       }
+       body .title-main {
+           font-size: 2em;
+       }
+       .toggle-slider {
+           width: 50px;
+           height: 26px;
+       }
+       .toggle-slider:before {
+           width: 20px;
+           height: 20px;
+           top: 3px;
+           left: 3px;
+       }
+       .btn-learn-more {
+            font-size: 16px;
+        }
+
+</style>

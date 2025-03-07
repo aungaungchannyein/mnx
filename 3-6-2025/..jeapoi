@@ -1,0 +1,415 @@
+<style>
+            section.learnworlds-section:nth-child(n+4) [data-node-type="framedImage"]:not(.in-view), section.learnworlds-section:nth-child(n+4) [data-node-type="screen"]:not(.in-view) .js-change-image-node {
+                background-image: url(data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==) !important;
+            }
+        </style>
+        <style>
+            .* {
+                font-family: "Barlow";
+            }
+
+            .learnworlds-heading-large {
+                font-family: "Poppins";
+                font-weight: bold;
+                font-size: 5.4rem;
+                letter-spacing: 0rem;
+                line-height: 1.2;
+                text-transform: none;
+            }
+
+            .learnworlds-heading-normal {
+                font-family: "Poppins";
+                font-weight: bold;
+                font-size: 4.8rem;
+                letter-spacing: 0rem;
+                line-height: 1.2;
+                text-transform: none;
+            }
+
+            .learnworlds-heading-small {
+                font-family: "Poppins";
+                font-weight: bold;
+                font-size: 3.8rem;
+                letter-spacing: 0rem;
+                line-height: 1.2;
+                text-transform: none;
+            }
+
+            .learnworlds-subheading-large {
+                font-family: "Poppins";
+                font-weight: bold;
+                font-size: 4.8rem;
+                letter-spacing: 0rem;
+                line-height: 1.2;
+                text-transform: none;
+            }
+
+            .learnworlds-subheading-normal {
+                font-family: "Poppins";
+                font-weight: bold;
+                font-size: 3.8rem;
+                letter-spacing: 0rem;
+                line-height: 1.3;
+                text-transform: none;
+            }
+
+            .learnworlds-subheading-small {
+                font-family: "Poppins";
+                font-weight: bold;
+                font-size: 2.3rem;
+                letter-spacing: 0rem;
+                line-height: 1.3;
+                text-transform: none;
+            }
+
+            .learnworlds-heading3-large {
+                font-family: "Poppins";
+                font-weight: bold;
+                font-size: 3.8rem;
+                letter-spacing: 0rem;
+                line-height: 1.3;
+                text-transform: none;
+            }
+
+            .learnworlds-heading3-normal {
+                font-family: "Poppins";
+                font-weight: bold;
+                font-size: 2.3rem;
+                letter-spacing: 0rem;
+                line-height: 1.3;
+                text-transform: none;
+            }
+
+            .learnworlds-heading3-small {
+                font-family: "Poppins";
+                font-weight: bold;
+                font-size: 1.8rem;
+                letter-spacing: 0rem;
+                line-height: 1.3;
+                text-transform: none;
+            }
+
+            .learnworlds-heading4-large {
+                font-family: "Poppins";
+                font-weight: bold;
+                font-size: 2.3rem;
+                letter-spacing: 0rem;
+                line-height: 1.3;
+                text-transform: none;
+            }
+
+            .learnworlds-heading4-normal {
+                font-family: "Poppins";
+                font-weight: bold;
+                font-size: 1.8rem;
+                letter-spacing: 0rem;
+                line-height: 1.4;
+                text-transform: none;
+            }
+
+            .learnworlds-heading4-small {
+                font-family: "Poppins";
+                font-weight: bold;
+                font-size: 1.4rem;
+                letter-spacing: 0rem;
+                line-height: 1.4;
+                text-transform: none;
+            }
+
+            .learnworlds-main-text-huge {
+                font-family: "Poppins";
+                font-size: 3.2rem;
+                font-weight: 300;
+                letter-spacing: 0rem;
+                line-height: 1.2;
+                text-transform: none;
+            }
+
+            .learnworlds-main-text-very-large {
+                font-family: "Poppins";
+                font-size: 2.6rem;
+                font-weight: normal;
+                letter-spacing: 0rem;
+                line-height: 1.3;
+                text-transform: none;
+            }
+
+            .learnworlds-main-text-large {
+                font-family: "Poppins";
+                font-weight: normal;
+                font-size: 2.2rem;
+                letter-spacing: 0rem;
+                line-height: 1.7;
+                text-transform: none;
+            }
+
+            .learnworlds-main-text-normal {
+                font-family: "Poppins";
+                font-weight: normal;
+                font-size: 1.9rem;
+                letter-spacing: 0rem;
+                line-height: 1.55;
+                text-transform: none;
+            }
+
+            .learnworlds-main-text-small {
+                font-family: "Poppins";
+                font-size: 1.7rem;
+                font-weight: normal;
+                letter-spacing: 0rem;
+                line-height: 1.55;
+                text-transform: none;
+            }
+
+            .learnworlds-main-text-very-small {
+                font-family: "Poppins";
+                font-size: 1.5rem;
+                font-weight: normal;
+                letter-spacing: 0rem;
+                line-height: 1.55;
+                text-transform: none;
+            }
+
+            .learnworlds-main-text-tiny {
+                font-family: "Poppins";
+                font-size: 1.3rem;
+                font-weight: normal;
+                letter-spacing: 0rem;
+                line-height: 1.55;
+                text-transform: none;
+            }
+
+            .learnworlds-overline-text {
+                font-family: "Poppins";
+                font-weight: normal;
+                font-size: 2rem;
+                letter-spacing: 0.01rem;
+                line-height: 1.55;
+                text-transform: none;
+            }
+
+            .learnworlds-quote-text {
+                font-family: "Poppins";
+                font-size: 2.5rem;
+                font-weight: normal;
+                letter-spacing: 0rem;
+                line-height: 1.55;
+                text-transform: none;
+            }
+
+            .learnworlds-size-small {
+                padding-bottom: 40px;
+                padding-top: 40px;
+            }
+
+            .learnworlds-size-normal {
+                padding-bottom: 80px;
+                padding-top: 80px;
+            }
+
+            .learnworlds-size-large {
+                padding-bottom: 120px;
+                padding-top: 120px;
+            }
+
+            .learnworlds-size-extra-large {
+                padding-bottom: 160px;
+                padding-top: 160px;
+            }
+
+            .learnworlds-button-large {
+                font-family: "Poppins";
+                font-weight: normal;
+                font-size: 1.9rem;
+                letter-spacing: 0rem;
+                text-transform: none;
+                border-radius: 28px;
+                padding-top: 14px;
+                padding-right: 32px;
+                padding-bottom: 14px;
+                padding-left: 32px;
+            }
+
+            .learnworlds-button-normal {
+                font-family: "Poppins";
+                font-weight: normal;
+                font-size: 1.7rem;
+                letter-spacing: 0rem;
+                text-transform: none;
+                border-radius: 28px;
+                padding-top: 12px;
+                padding-right: 32px;
+                padding-bottom: 12px;
+                padding-left: 32px;
+            }
+
+            .learnworlds-button-small {
+                font-family: "Poppins";
+                font-weight: normal;
+                font-size: 1.4rem;
+                letter-spacing: 0rem;
+                text-transform: none;
+                border-radius: 28px;
+                padding-top: 9px;
+                padding-right: 16px;
+                padding-bottom: 9px;
+                padding-left: 16px;
+            }
+
+            .learnworlds-input-large {
+                font-family: "Poppins";
+                font-size: 1.9rem;
+                line-height: 1;
+                font-weight: normal;
+                letter-spacing: 0rem;
+                text-transform: none;
+                padding-top: 14px;
+                padding-right: 20px;
+                padding-bottom: 14px;
+                padding-left: 20px;
+                border-radius: 28px;
+            }
+
+            .learnworlds-input-normal {
+                font-family: "Poppins";
+                font-size: 1.7rem;
+                line-height: 1;
+                font-weight: normal;
+                letter-spacing: 0rem;
+                text-transform: none;
+                padding-top: 12px;
+                padding-right: 16px;
+                padding-bottom: 12px;
+                padding-left: 16px;
+                border-radius: 28px;
+            }
+
+            .learnworlds-input-small {
+                font-family: "Poppins";
+                font-size: 1.4rem;
+                line-height: 1;
+                font-weight: normal;
+                letter-spacing: 0rem;
+                text-transform: none;
+                padding-top: 9px;
+                padding-right: 16px;
+                padding-bottom: 9px;
+                padding-left: 16px;
+                border-radius: 28px;
+            }
+
+            .lw-yellow-text {
+                color: #ffc107;
+            }
+
+            .lw-green-text {
+                color: #4ccc6b;
+            }
+
+            .lw-red-text {
+                color: #D83232;
+            }
+
+            .lw-text-color-fadeout10 {
+                opacity: 0.9;
+            }
+
+            .lw-text-color-fadeout20 {
+                opacity: 0.8;
+            }
+
+            .lw-text-color-fadeout30 {
+                opacity: 0.7;
+            }
+
+            .lw-text-color-fadeout50 {
+                opacity: 0.5;
+            }
+
+            .lw-text-color-fadeout70 {
+                opacity: 0.3;
+            }
+
+            .lw-text-color-fadeout80 {
+                opacity: 0.2;
+            }
+
+            .lw-qr-page .lw-linear-list-item .lw-linear-option.selected {
+                background-color: #282829;
+            }
+
+            .lw-qr-page .lw-linear-list-item .lw-linear-option.selected .option-label {
+                color: #FEFFFF;
+            }
+
+            .lw-qr-page .lw-linear-list-item .lw-linear-list-item-radio:focus + .lw-linear-option:not(.selected) {
+                background-color: rgba(40,40,41,0.2);
+            }
+
+            .lw-qr-page .lw-qn-mc-options-1 .lw-qn-mc-option .lw-qn-mc-option-checkbox:checked + .lw-qn-mc-option-check {
+                border-color: #282829;
+                background-color: #282829;
+                color: #FEFFFF;
+            }
+
+            .lw-qr-page .lw-qn-mc-options-3 .lw-qn-mc-option .lw-qn-mc-option-checkbox:checked + .lw-qn-mc-option-check {
+                border-color: #282829;
+                background-color: #282829;
+                color: #FEFFFF;
+            }
+
+            .lw-qr-page .lw-qn-radio-options-2 .lw-qn-radio-option .lw-qn-radio-option-radio:checked + .lw-qn-radio-option-circle {
+                background-color: #282829;
+                border-color: #282829;
+                color: #FEFFFF;
+            }
+
+            .lw-black-bg {
+                background-color: black;
+                border-color: black;
+                color: #FFFFFF;
+            }
+
+            .lw-black-bg .lw-border-color-fadeout20 {
+                border-color: rgba(255,255,255,0.8);
+            }
+
+            .lw-black-bg .lw-bt-1px-fadeout20 {
+                border-top: 1px solid rgba(255,255,255,0.8);
+            }
+
+            .lw-black-bg .lw-border-color-fadeout50 {
+                border-color: rgba(255,255,255,0.5);
+            }
+
+            .lw-black-bg .lw-bt-1px-fadeout50 {
+                border-top: 1px solid rgba(255,255,255,0.5);
+            }
+
+            .lw-black-bg .lw-br-1px-fadeout50 {
+                border-right: 1px solid rgba(255,255,255,0.5);
+            }
+
+            .lw-black-bg .lw-b-1px-fadeout50 {
+                border: 1px solid rgba(255,255,255,0.5);
+            }
+
+            .lw-black-bg .lw-b-1px-fadeout80 {
+                border: 1px solid rgba(255,255,255,0.2);
+            }
+
+            .lw-black-bg .lw-b-1px-fadeout90 {
+                border: 1px solid rgba(255,255,255,0.1);
+            }
+
+            .lw-black-bg .lw-bt-1px-fadeout80 {
+                border-top: 1px solid rgba(255,255,255,0.2);
+            }
+
+            .lw-black-bg .lw-br-1px-fadeout80 {
+                border-right: 1px solid rgba(255,255,255,0.2);
+            }
+
+            .lw-black-bg .lw-bl-1px-fadeout80 {
+                border-left: 1px solid rgba(255,255,255,0.2);
+            }

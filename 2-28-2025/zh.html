@@ -1,0 +1,439 @@
+<main class="inner-page" id="dynamic-leverage">
+    <section>
+    <div class="container mt-70">
+        <h1 class="text-center"><strong>杠杆类型</strong></h1>
+    
+        <h2 class="text-center"><strong>帐户杠杆</strong></h2>
+    
+        <div class="mt-50">
+            <p class="text-justify">每个交易账户在创建时都有一定的杠杆作用。 但是，在进行交易时，实际杠杆可能会有所不同，因为不同的交易品种可能具有不同的杠杆。</p>
+    
+            <p class="text-justify">例如，虽然在大多数情况下您可以获得主要货币对 1:500 的杠杆，但经纪商为高度波动的货币对、股票、能源、贵金属和加密货币提供较低的杠杆 (1:10 - 1:50) .</p>
+    
+            <p class="text-justify">在特定情况下，交易账户的杠杆会被设定一个上限制。</p>
+    
+            <p class="text-justify">如果交易品种的杠杆小于账户杠杆，则将应用交易品种的杠杆，如果交易品种的杠杆更大则以账户杠杆为准。</p>
+    
+            <p class="text-justify">同一交易品种的不同交易量可以有不同的杠杆，具体取决于交易量</p>
+        </div>
+    
+        <div class="mt-50">
+            <p class="text-justify"><strong>风险暴露值公式=手数 x 合约规模（交易单数） x 转换率 =风险暴露值 </strong><br />
+                <strong>每个交易资产的合约规模（交易单数）可以在平台的交易品种信息栏中看到。</strong><br />
+                <strong>保证金要求公式= 风险暴露值/杠杆</strong></p>
+        </div>
+    
+        <div class="mt-70" id="tab-leverage" role="tablist">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-4 col-6">
+                    <div class="text-center mb-10"><span class="btn-tab-assets-class tab-forex tab-active">外汇</span></div>
+                </div>
+    
+                <div class="col-lg-3 col-md-3 col-sm-4 col-6">
+                    <div class="text-center mb-10"><span class="btn-tab-assets-class tab-metals">贵金属</span></div>
+                </div>
+    
+                <div class="col-lg-3 col-md-3 col-sm-4 col-6">
+                    <div class="text-center mb-10"><span class="btn-tab-assets-class tab-crypto">加密货币</span></div>
+                </div>
+    
+                <div class="col-lg-3 col-md-3 col-sm-4 col-6">
+                    <div class="text-center mb-10"><span class="btn-tab-assets-class tab-stocks">股票</span></div>
+                </div>
+    
+                <div class="col-lg-4 col-md-3 col-sm-4 col-6">
+                    <div class="text-center mb-10"><span class="btn-tab-assets-class tab-indices">指数</span></div>
+                </div>
+    
+                <div class="col-lg-4 col-md-3 col-sm-4 col-6">
+                    <div class="text-center mb-10"><span class="btn-tab-assets-class tab-energies">能源</span></div>
+                </div>
+                <!-- <div class="col-lg-4 col-md-3 col-sm-4 col-6">
+                        <div class="text-center mb-10"><span class="btn-tab-assets-class tab-commodities">Commodities</span></div>
+                    </div> -->
+    
+                <div class="col-lg-4 col-md-3 col-sm-4 col-6">
+                    <div class="text-center mb-10"><span class="btn-tab-assets-class tab-futures">期货</span></div>
+                </div>
+            </div>
+    
+            <div class="tbl-forex">
+                <h2 class="text-center mt-50 mb-50"><strong>主要货币对杠杆等级</strong></h2>
+    
+                <div class="table-responsive mt-10" style="display: block;">
+                    <div class="container">
+                        <table class="table table-striped text-center">
+                            <thead>
+                                <tr>
+                                    <th class="hgt tl-radius" colspan="2" scope="col">风险暴露值(USD)</th>
+                                    <th class="hgt tr-radius" colspan="2" scope="col">杠杆</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>0</td>
+                                    <td>50,000</td>
+                                    <td>4000</td>
+                                </tr>
+                                <tr>
+                                    <td>50,001</td>
+                                    <td>150,000</td>
+                                    <td>2000</td>
+                                </tr>
+                                <tr>
+                                    <td>150,001</td>
+                                    <td>500,000</td>
+                                    <td>1000</td>
+                                </tr>
+                                <tr>
+                                    <td>500,001</td>
+                                    <td>2,000,000​</td>
+                                    <td>500</td>
+                                </tr>
+                                <tr>
+                                    <td>2,000,001</td>
+                                    <td>8,000,000​</td>
+                                    <td>200</td>
+                                </tr>
+                                <tr>
+                                    <td>8,000,001</td>
+                                    <td>无限制</td>
+                                    <td>100</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+    
+                <h2 class="text-center mt-50"><strong>次要货币对杠杆等级</strong></h2>
+    
+                <div class="table-responsive mt-10" style="display: block;">
+                    <div class="container">
+                        <table class="table table-striped text-center">
+                            <thead>
+                                <tr>
+                                    <th class="hgt tl-radius" colspan="2" scope="col">风险暴露值(USD)</th>
+                                    <th class="hgt tr-radius" colspan="2" scope="col">杠杆</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>0</td>
+                                    <td>50,000</td>
+                                    <td>4000</td>
+                                </tr>
+                                <tr>
+                                    <td>50,001</td>
+                                    <td>150,000</td>
+                                    <td>2000</td>
+                                </tr>
+                                <tr>
+                                    <td>150,001</td>
+                                    <td>500,000</td>
+                                    <td>1000</td>
+                                </tr>
+                                <tr>
+                                    <td>500,001</td>
+                                    <td>2,000,000​</td>
+                                    <td>500</td>
+                                </tr>
+                                <tr>
+                                    <td>2,000,001</td>
+                                    <td>8,000,000​</td>
+                                    <td>200</td>
+                                </tr>
+                                <tr>
+                                    <td>8,000,001</td>
+                                    <td>无限制</td>
+                                    <td>100</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+    
+                <h2 class="text-center mt-50"><strong>外来货币对杠杆等级</strong></h2>
+    
+                <div class="table-responsive mt-10" style="display: block;">
+                    <div class="container">
+                        <table class="table table-striped text-center">
+                            <thead>
+                                <tr>
+                                    <th class="hgt tl-radius" colspan="2" scope="col">风险暴露值(USD)</th>
+                                    <th class="hgt tr-radius" colspan="2" scope="col">杠杆</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>0</td>
+                                    <td>50,000</td>
+                                    <td>50</td>
+                                </tr>
+                                <tr>
+                                    <td>50,001</td>
+                                    <td>3,000,000</td>
+                                    <td>25</td>
+                                </tr>
+                                <tr>
+                                    <td>3,000,001</td>
+                                    <td>无限制</td>
+                                    <td>10</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="tbl-metals" style="display: none">
+                <h2 class="text-center mt-50"><strong>贵金属杠杆等级</strong></h2>
+    
+                <div class="table-responsive mt-10" style="display: block;">
+                    <div class="container">
+                        <table class="table table-striped text-center">
+                            <thead>
+                                <tr>
+                                    <th class="hgt tl-radius" colspan="2" scope="col">风险暴露值(USD)</th>
+                                    <th class="hgt tr-radius" colspan="2" scope="col">杠杆</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>0</td>
+                                    <td>5,000</td>
+                                    <td>4000</td>
+                                </tr>
+                                <tr>
+                                    <td>5,001</td>
+                                    <td>10,000</td>
+                                    <td>2000</td>
+                                </tr>
+                                <tr>
+                                    <td>10,001</td>
+                                    <td>50,000</td>
+                                    <td>1000</td>
+                                </tr>
+                                <tr>
+                                    <td>50,001</td>
+                                    <td>100,000​</td>
+                                    <td>500</td>
+                                </tr>
+                                <tr>
+                                    <td>100,001</td>
+                                    <td>250,000​</td>
+                                    <td>200</td>
+                                </tr>
+                                <tr>
+                                    <td>250,001</td>
+                                    <td>无限制</td>
+                                    <td>100</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="tbl-crypto" style="display: none">
+                <h2 class="text-center mt-50"><strong>加密货币杠杆等级</strong></h2>
+    
+                <div class="table-responsive mt-10" style="display: block;">
+                    <div class="container">
+                        <table class="table table-striped text-center">
+                            <thead>
+                                <tr>
+                                    <th class="hgt tl-radius" colspan="2" scope="col">风险暴露值(USD)</th>
+                                    <th class="hgt tr-radius" colspan="2" scope="col">杠杆</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>0</td>
+                                    <td>50,000</td>
+                                    <td>50</td>
+                                </tr>
+                                <tr>
+                                    <td>50,001</td>
+                                    <td>3,000,000</td>
+                                    <td>30</td>
+                                </tr>
+                                <tr>
+                                    <td>3,000,001</td>
+                                    <td>无限制</td>
+                                    <td>10</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="tbl-stocks" style="display: none">
+                <h2 class="text-center mt-50"><strong>股票差价合约杠杆等级</strong></h2>
+    
+                <div class="table-responsive mt-10" style="display: block;">
+                    <div class="container">
+                        <table class="table table-striped text-center">
+                            <thead>
+                                <tr>
+                                    <th class="hgt tl-radius" colspan="2" scope="col">风险暴露值(USD)</th>
+                                    <th class="hgt tr-radius" colspan="2" scope="col">杠杆</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>0</td>
+                                    <td>50,000</td>
+                                    <td>20</td>
+                                </tr>
+                                <tr>
+                                    <td>50,001</td>
+                                    <td>无限制</td>
+                                    <td>10</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="tbl-indices" style="display: none">
+                <h2 class="text-center mt-50"><strong>指数杠杆等级</strong></h2>
+    
+                <div class="table-responsive mt-10" style="display: block;">
+                    <div class="container">
+                        <table class="table table-striped text-center">
+                            <thead>
+                                <tr>
+                                    <th class="hgt tl-radius" colspan="2" scope="col">风险暴露值(USD)</th>
+                                    <th class="hgt tr-radius" colspan="2" scope="col">杠杆</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>0</td>
+                                    <td>50,000</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>50,001</td>
+                                    <td>150,000</td>
+                                    <td>50</td>
+                                </tr>
+                                <tr>
+                                    <td>150,001</td>
+                                    <td>3,000,000</td>
+                                    <td>25</td>
+                                </tr>
+                                <tr>
+                                    <td>3,000,001</td>
+                                    <td>无限制</td>
+                                    <td>10</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="tbl-energies" style="display: none">
+                <h2 class="text-center mt-50"><strong>能源杠杆等级</strong></h2>
+    
+                <div class="table-responsive mt-10" style="display: block;">
+                    <div class="container">
+                        <table class="table table-striped text-center">
+                            <thead>
+                                <tr>
+                                    <th class="hgt tl-radius" colspan="2" scope="col">风险暴露值(USD)</th>
+                                    <th class="hgt tr-radius" colspan="2" scope="col">杠杆</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>0</td>
+                                    <td>50,000</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>50,001</td>
+                                    <td>150,000</td>
+                                    <td>50</td>
+                                </tr>
+                                <tr>
+                                    <td>150,001</td>
+                                    <td>3,000,000</td>
+                                    <td>25</td>
+                                </tr>
+                                <tr>
+                                    <td>3,000,001</td>
+                                    <td>无限制</td>
+                                    <td>10</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="tbl-commodities" style="display: none">
+                <h2 class="text-center mt-50"><strong>Commodities Leverage Tiers</strong></h2>
+    
+                <div class="table-responsive mt-10" style="display: block;">
+                    <div class="container">
+                        <table class="table table-striped text-center">
+                            <thead>
+                                <tr>
+                                    <th class="hgt tl-radius" colspan="2" scope="col">风险暴露值(USD)</th>
+                                    <th class="hgt tr-radius" colspan="2" scope="col">杠杆</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>0</td>
+                                    <td>50,000</td>
+                                    <td>200</td>
+                                </tr>
+                                <tr>
+                                    <td>50,000</td>
+                                    <td>3,000,000</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>3,000,000</td>
+                                    <td>无限制</td>
+                                    <td>50</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="tbl-futures" style="display: none">
+                <h2 class="text-center mt-50"><strong>Futures CFD Leverage Tiers</strong></h2>
+    
+                <div class="table-responsive mt-10" style="display: block;">
+                    <div class="container">
+                        <table class="table table-striped text-center">
+                            <thead>
+                                <tr>
+                                    <th class="hgt tl-radius" colspan="2" scope="col">风险暴露值(USD)</th>
+                                    <th class="hgt tr-radius" colspan="2" scope="col">杠杆</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>0</td>
+                                    <td>无限制</td>
+                                    <td>10</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    </main>
+    <!-- End #main -->

@@ -1,0 +1,36 @@
+<script>
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+    const modeText = document.getElementById('mode-text');
+    const body = document.body;
+  
+    // Check if dark mode is set in localStorage
+    const isDarkMode = localStorage.getItem('darkMode');
+
+    if (isDarkMode === null) {
+      body.classList.add('dark-mode');
+      modeText.textContent = 'Dark';
+      darkModeToggle.checked = true;
+    }
+    // Set default mode based on the value in localStorage
+    else if (isDarkMode === 'true') {
+      body.classList.add('dark-mode');
+      modeText.textContent = 'Dark';
+      darkModeToggle.checked = true;
+    } else {
+      body.classList.remove('dark-mode');
+      modeText.textContent = 'Light';
+      darkModeToggle.checked = false;
+    }
+  
+    darkModeToggle.addEventListener('change', function () {
+      if (darkModeToggle.checked) {
+        body.classList.add('dark-mode');
+        modeText.textContent = 'Dark';
+        localStorage.setItem('darkMode', true);
+      } else {
+        body.classList.remove('dark-mode');
+        modeText.textContent = 'Light';
+        localStorage.setItem('darkMode', false);
+      }
+    });
+  </script>
