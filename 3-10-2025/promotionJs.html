@@ -117,7 +117,25 @@
       ];
 
       var globalLatamBrazil = [
-   "AG","AI","AR","AW","BB","BM","BO","BR","BS","BZ","CL","CO","CR","CU","DM","DO","EC","FK","GD","GT","GY","HN","HT","JM","KN","KY","LC","MS","MX","NI","PA","PE","PR","PY","SR","SV","TC","TT","UY","VC","VE","VG","VI","ES","PT"
+    "AR", // Argentina
+    "BO", // Bolivia
+    "BR", // Brazil
+    "CL", // Chile
+    "CO", // Colombia
+    "CR", // Costa Rica
+    "DO", // Dominican Republic
+    "EC", // Ecuador
+    "SV", // El Salvador
+    "GT", // Guatemala
+    "HN", // Honduras
+    "NI", // Nicaragua
+    "PA", // Panama
+    "PY", // Paraguay
+    "PE", // Peru
+    "PR", // Puerto Rico
+    "UY", // Uruguay
+    "VE",  // Venezuela
+    "ES"  // Spain (not LATAM but Spanish-speaking)
 ];
   
       var groupindia2 = ["IN", "BD"];
@@ -135,7 +153,7 @@
   
       // Initially hide all groups, then selectively show relevant group
       $(
-        ".group1,.bonus200LatamBrazil, .monamaxcupgroup, .maxgroup1, .group2, .group3, .group4, .japangroup1, .malaysiagroup1, .thaigroup1, .vietnamgroup2, .chinagroup1, .chinagroup3, .spaingroup1, .indiagroup1, .indiagroup2, .indiagroup3, .indiagroup4"
+        ".group1, .monamaxcupgroup, .maxgroup1, .group2, .group3, .group4, .japangroup1, .malaysiagroup1, .thaigroup1, .vietnamgroup2, .chinagroup1, .chinagroup3, .spaingroup1, .indiagroup1, .indiagroup2, .indiagroup3, .indiagroup4"
       ).hide();
   
       function removeIrrelevantContent(countryCode) {
@@ -149,10 +167,12 @@
         
         
   
-        if (globalLatamBrazil.includes(countryCode)) {
-          $(".bonus200LatamBrazil").show();
-        } else if (countriesEligibleForCup.includes(countryCode)) {
+        // if (globalLatamBrazil.includes(countryCode)) {
+        //   $(".bonus200LatamBrazil").show();
+        // } else
+     if (countriesEligibleForCup.includes(countryCode)) {
           $(".monamaxcupgroup").show();
+          $(".bonus200LatamBrazil").show();
         } else if (globalGroup1.includes(countryCode)) {
           $(".group1").show();
           $(".group1 section.recurring").remove();      
@@ -184,7 +204,7 @@
   
         // Remove elements that are not displayed
         $(
-          ".group1, .bonus200LatamBrazil, .monamaxcupgroup, .maxgroup1, .group2, .group3, .group4, .japangroup1, .malaysiagroup1, .thaigroup1, .vietnamgroup2, .chinagroup1, .chinagroup3, .spaingroup1, .indiagroup1, .indiagroup2, .indiagroup3, .indiagroup4"
+          ".group1, .monamaxcupgroup, .maxgroup1, .group2, .group3, .group4, .japangroup1, .malaysiagroup1, .thaigroup1, .vietnamgroup2, .chinagroup1, .chinagroup3, .spaingroup1, .indiagroup1, .indiagroup2, .indiagroup3, .indiagroup4"
         ).each(function () {
           if ($(this).css("display") === "none") {
             $(this).remove();

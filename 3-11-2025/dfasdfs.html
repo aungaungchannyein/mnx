@@ -1,0 +1,820 @@
+<script>
+    $(document).ready(function () {
+
+        domain = window.location.hostname;
+        userId = fxbo.request.userId;
+        userEmail = encodeURIComponent(fxbo.request.email);
+
+        //$("#btnCourse1a,#btnCourse1b").html('%widget_acadamis_course_one_enroll% %widget_acadamis_course_one_continue%');
+        $("#btnCourse2a,#btnCourse2b").html('%widget_acadamis_course_two_enroll% %widget_acadamis_course_two_continue%');
+        $("#btnCourse3a,#btnCourse3b").html('%widget_acadamis_course_three_enroll% %widget_acadamis_course_three_continue%');
+        $("#btnCourse4a,#btnCourse4b").html('%widget_acadamis_course_four_enroll% %widget_acadamis_course_four_continue%');
+        $("#btnCourse8a,#btnCourse8b").html('%widget_acadamis_course_eight_enroll% %widget_acadamis_course_eight_continue%');
+        $("#btnCourse9a,#btnCourse9b").html('%widget_acadamis_course_nine_enroll% %widget_acadamis_course_nine_continue%');
+        $("#btnCourse10a,#btnCourse10b").html('%widget_acadamis_course_ten_enroll% %widget_acadamis_course_ten_continue%');
+        $('%widget_acadamis_course_nine_unsubscribe%').insertAfter(".btnSep");
+        //$('%widget_acadamis_course_ten_unsubscribe%').insertAfter(".btnSep");
+        $("#btnCourse11a,#btnCourse11b").html('%widget_acadamis_course_eleven_enroll% %widget_acadamis_course_eleven_continue%');
+        $("#btnCourse12a,#btnCourse12b,#btnCourse12c").html('%widget_acadamis_course_twelve_enroll% %widget_acadamis_course_twelve_continue%');
+
+        //$("#btnCourse1a, #btnCourse1b").click(function() {
+        //window.open("https://apilive.monaxa.com/rebateapi/public/acadamis/cw/"+userId+"?type=61&senderUrl=https://"+domain);
+        //});
+        $("#btnCourse2a, #btnCourse2b").click(function () {
+            window.open("https://apilive.monaxa.com/rebateapi/public/acadamis/cw/" + userId + "?type=62&senderUrl=https://" + domain);
+        });
+        $("#btnCourse3a, #btnCourse3b").click(function () {
+            window.open("https://apilive.monaxa.com/rebateapi/public/acadamis/cw/" + userId + "?type=63&senderUrl=https://" + domain);
+        });
+        $("#btnCourse4a, #btnCourse4b").click(function () {
+            window.open("https://apilive.monaxa.com/rebateapi/public/acadamis/cw/" + userId + "?type=84&senderUrl=https://" + domain);
+        });
+        $("#btnCourse5").click(function () {
+            window.open("https://apilive.monaxa.com/rebateapi/public/acadamis/callurlv3/?email=" + userEmail + "&productId=strategic-roadmap-of-marketing&tagId=21958");
+        });
+        $("#btnCourse6").click(function () {
+            window.open("https://apilive.monaxa.com/rebateapi/public/acadamis/callurlv3/?email=" + userEmail + "&productId=personal-finance&tagId=21959");
+        });
+        $("#btnCourse7").click(function () {
+            window.open("https://apilive.monaxa.com/rebateapi/public/acadamis/callurlv3/?email=" + userEmail + "&productId=monaxa-template&tagId=21960");
+        });
+        $("#btnCourse8a, #btnCourse8b").click(function () {
+            window.open("https://apilive.monaxa.com/rebateapi/public/acadamis/cw/" + userId + "?type=85&senderUrl=https://" + domain);
+        });
+        $("#btnCourse9a, #btnCourse9b").click(function () {
+            window.open("https://apilive.monaxa.com/rebateapi/public/acadamis/cw/subscriptioncourse/" + userId + "?type=99&senderUrl=https://" + domain);
+        });
+        $("#btnCourse9a_u, #btnCourse9b_u").click(function () {
+            //window.open("https://apilive.monaxa.com/rebateapi/public/acadamis/cw/subscriptioncourse/"+userId+"?type=99&senderUrl=https://"+domain);
+        });
+        $("#btnCourse10a, #btnCourse10b").click(function () {
+            window.open("https://apilive.monaxa.com/rebateapi/public/acadamis/cw/subscriptioncourse/" + userId + "?type=103&senderUrl=https://" + domain);
+        });
+        $("#btnCourse10a_u, #btnCourse10b_u").click(function () {
+            //window.open("https://apilive.monaxa.com/rebateapi/public/acadamis/cw/subscriptioncourse/"+userId+"?type=103&senderUrl=https://"+domain);
+        });
+        $("#btnCourse11a, #btnCourse11b").click(function () {
+            window.open("https://apilive.monaxa.com/rebateapi/public/acadamis/cw/" + userId + "?type=104&senderUrl=https://" + domain);
+        });
+        $("#btnCourse12a, #btnCourse12b, #btnCourse12c").click(function () {
+            window.open("https://apilive.monaxa.com/rebateapi/public/acadamis/cw/" + userId + "?type=105&senderUrl=https://" + domain);
+        });
+    });
+</script>
+
+<style>
+    .monaxa-free-course {
+        background: #282829;
+        padding: 50px 0;
+        color: rgb(251, 226, 137);
+    }
+
+    .jason-free-course {
+        background-image: url(https://lwfiles.mycourse.app/63cee195406afef780c33083-public/911e41f39f9f04271313ccf0134274ab.png);
+        background-size: cover;
+        padding: 50px 0 0;
+        color: #FFFFFF;
+    }
+
+    .acadamis {
+        margin: 50px;
+    }
+
+    .learnworlds-image {
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        overflow: hidden;
+        height: 200px;
+        margin-bottom: 25px;
+    }
+
+    .img-1 {
+        background-image: url(https://lwfiles.mycourse.app/63cee195406afef780c33083-public/custom/400x0_55b4b7cff3835b9868532f615626e9be.png);
+    }
+
+    .img-2 {
+        background-image: url(https://lwfiles.mycourse.app/63cee195406afef780c33083-public/custom/400x0_2fad38f76d9a05a8501d87d5b8363370.png);
+    }
+
+    .img-3 {
+        background-image: url(https://lwfiles.mycourse.app/63cee195406afef780c33083-public/custom/400x0_6cad389a21c07319471007af44b06e26.png);
+    }
+
+    .img-4 {
+        background-image: url(https://lwfiles.mycourse.app/63cee195406afef780c33083-public/c5a1516e7797fb225f4c4765d5c7dc8e.png);
+    }
+
+    .img-5 {
+        background-image: url(https://lwfiles.mycourse.app/63cee195406afef780c33083-public/custom/400x0_18bf1e76bd940fd8500372e0721cc5a5.jpeg);
+    }
+
+    .img-6 {
+        background-image: url(https://lwfiles.mycourse.app/63cee195406afef780c33083-public/custom/400x0_76f40bfac1cc4437254d038c9f77a0b2.jpeg);
+    }
+
+    .img-7 {
+        background-image: url(https://lwfiles.mycourse.app/63cee195406afef780c33083-public/custom/400x0_d69d27f8aa04278d19027f5ea48faaec.jpeg);
+    }
+
+    .img-8 {
+        background-image: url(https://lwfiles.mycourse.app/63cee195406afef780c33083-public/1bb1ba036fe155e71dc7e726093366bc.png);
+    }
+
+    .img-9 {
+        background-image: url(https://lwfiles.mycourse.app/63cee195406afef780c33083-public/custom/400x0_793f619f4953c366431b9c158952881d.jpg);
+    }
+
+    .img-10 {
+        background-image: url(https://lwfiles.mycourse.app/63cee195406afef780c33083-public/6eadf88c0deb749cb85fd6acac60c4e8.png);
+    }
+
+    .img-11 {
+        background-image: url(https://lwfiles.mycourse.app/63cee195406afef780c33083-public/5480c1c10797c4c3e19b7953b87df66b.png);
+    }
+
+    .img-12 {
+        background-image: url(https://lwfiles.mycourse.app/63cee195406afef780c33083-public/custom/400x0_9dd47a8ee1fa4977fa7dbb77e789fb37.png);
+    }
+
+    .acadamis h3 {
+        font-weight: bold;
+    }
+
+    .acadamis p,
+    .modal-content p,
+    .text-block,
+    .modal-content .fas {
+        font-size: 20px;
+        letter-spacing: 0.00rem;
+        line-height: 1.55;
+        text-transform: none;
+        color: #282829;
+        /*opacity:0.8;*/
+    }
+
+    .acadamis .btn {
+        background-color: #FFC107 !important;
+        border-radius: 25px;
+        padding: 10px 55px;
+    }
+
+    .acadamis .price {
+        font-weight: bold;
+        font-size: 1.5em;
+        display: block;
+        margin-top: 10px;
+    }
+
+    .course-item {
+        margin-bottom: 30px;
+    }
+
+    .course-item.disabled {
+        opacity: 0.5;
+    }
+
+    .course-item:hover {
+        box-shadow: 5px 5px 12px grey;
+        border-radius: 25px;
+        padding: 20px;
+    }
+
+    .course-item .badge-warning {
+        background: #fce38a;
+        color: #000000;
+    }
+
+    .course-item .item-text {
+        min-height: 245px;
+    }
+
+    .course-presenter {
+        margin-bottom: 10px;
+    }
+
+    .presenter-img {
+        width: 50px;
+        height: 50px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+        display: inline-block;
+
+    }
+
+    .presenter-1,
+    .presenter-2 {
+        background-image: url(https://lwfiles.mycourse.app/63cee195406afef780c33083-public/custom/500x0_b5894296c81d56ad0a372d483e05657a.png);
+    }
+
+    .presenter-3 {
+        background-image: url(https://lwfiles.mycourse.app/63cee195406afef780c33083-public/custom/500x0_649d986549e4b117ee911b06d88db4fe.jpeg);
+    }
+
+    .presenter-4 {
+        background-image: url(https://lwfiles.mycourse.app/63cee195406afef780c33083-public/a0f7cfe9c0f604ff3f95118dd5c396ff.png);
+    }
+
+    .presenter-5,
+    .presenter-6 {
+        background-image: url(https://lwfiles.mycourse.app/63cee195406afef780c33083-public/custom/500x0_6248cf527d7b3b29012bf1059f57e569.png);
+    }
+
+    .presenter-7 {
+        background-image: url(https://lwfiles.mycourse.app/63cee195406afef780c33083-public/custom/500x0_aeffddf8184cbbee6365784026bf8831.png);
+    }
+
+    .presenter-8 {
+        background-image: url(https://lwfiles.mycourse.app/63cee195406afef780c33083-public/ca05b22926431a93c0b02b5d58488272.png);
+    }
+
+    .presenter-9 {
+        background-image: url(https://lwfiles.mycourse.app/63cee195406afef780c33083-public/afaaefd9e68aa2d06f2814cad50d6631.jpg);
+    }
+
+    .presenter-10 {
+        background-image: url(https://lwfiles.mycourse.app/63cee195406afef780c33083-public/62982eaccfde9a382d9ccc34e1bfaa90.png);
+    }
+
+    .presenter-11 {
+        background-image: url(https://lwfiles.mycourse.app/63cee195406afef780c33083-public/custom/500x0_442ce5cdf8f9b33d0600fccfc1c8fdb8.jpg);
+    }
+
+    .presenter-12 {
+        background-image: url(https://lwfiles.mycourse.app/63cee195406afef780c33083-public/f9fdf6a1cb2ce198af9711541c3ae32e.png);
+    }
+
+    .presenter-name {
+        margin-left: 10px;
+        display: inline-block;
+        vertical-align: bottom;
+    }
+
+    .modal-content {
+        padding: 30px;
+    }
+
+    .modal-content h1 {
+        font-weight: bold;
+        line-height: 1.3em;
+        font-size: 3em;
+        margin: 25px 0;
+    }
+
+    .modal-content h2 {
+        font-size: 2.6em;
+        font-weight: bold;
+        margin: 0 0 25px;
+    }
+
+    .modal-content h3 {
+        font-size: 1.3em;
+        opacity: .75;
+        margin-bottom: 35px;
+    }
+
+    .modal-content .btn-primary {
+        background-color: #FFC107 !important;
+        border: none;
+        border-radius: 45px;
+        padding: 15px 0;
+        color: #282829;
+        display: block;
+        font-size: 1.5em;
+        width: 100%;
+    }
+
+    .modal-content .btn-danger {
+        background-color: #dd4b39 !important;
+        border: none;
+        border-radius: 45px;
+        padding: 5px 25px;
+        color: #FFFFFF;
+        display: block;
+        font-size: 1.5em;
+        /*width: 100%;*/
+        margin: 10px auto;
+    }
+
+    .modal-content .monaxa-free-course .btn-primary {
+        background-color: #FCE38B !important;
+    }
+
+    .modal-content .jason-free-course .btn-primary {
+        background-color: #B23CEC !important;
+        color: #FFFFFF;
+    }
+
+    .jason-free-course .overview {
+        background-color: #5764CF;
+        margin: 0;
+    }
+
+    .modal-content mt-80 {
+        margin-top: 80px;
+    }
+
+    .modal-content p.title {
+        font-weight: bold;
+    }
+
+    .mt-80 {
+        margin-top: 80px;
+    }
+
+    .cashback {
+        padding: 30px 20px;
+        background: #FFC107;
+    }
+
+    .modal-content .fa-orange {
+        color: #ffc107;
+    }
+
+    .modal-content .fas {
+        position: absolute;
+        top: 0;
+        left: 20px;
+    }
+
+    .modal-content .text-block {
+        padding-left: 40px;
+    }
+
+    .p80 {
+        padding: 80px 0;
+    }
+
+    .underline {
+        border-bottom: 1px solid rgba(40, 40, 41, 0.2);
+        display: block;
+    }
+
+    .modal-content .btn-course-1 {
+        margin-bottom: 20px;
+    }
+
+    .badge-free {
+        position: absolute;
+        right: 0;
+        top: 85px;
+        font-size: 13px;
+        background-color: #2502C6 !important;
+        font-weight: 100;
+    }
+</style>
+
+<div class="acadamis">
+
+    <!--<div class="underline">
+		<h3 class="text-center">Deposit the course fee. Monaxa pays Acadamis & puts cash back into your trading account.</h3>
+		<br />
+	</div>
+	<br />-->
+
+    <div class="row">
+        <!--<div class="col-lg-4 col-md-6 col-sm-6 position-relative course-item">
+			<div class="learnworlds-image img-1"></div>
+			<div class="item-text">
+				<span class="badge badge-warning">Español</span>
+				<h3>Curso de Trader para hacer Dinero del Monstruo de Mat</h3>
+				<p>Simplifica y confuso mundo del trading. Está específicamente diseñado para ayudar a los principiantes a comenzar.</p>
+			</div>
+			<div class="course-presenter">
+				<div class="presenter-img presenter-1"></div>
+				<div class="presenter-name"><p>Mathew Clarke</p></div>
+			</div>
+			<div>
+				
+				<a href="#" class="btn btn-block stretched-link" data-toggle="modal" data-target=".course-1-details">See Details</a>
+				<span class="price text-center">$150</span>
+			</div>
+		</div>-->
+
+        <div class="col-lg-4 col-md-6 col-sm-6 position-relative course-item">
+            <div class="learnworlds-image img-12"></div>
+            <div class="item-text">
+                <span class="badge badge-warning">English</span> <span class="badge badge-danger">Monthly
+                    Subscription</span>
+                <h3>AlgoBuilderX</h3>
+                <p>A $25 monthly subscription to a tool that can build your trading strategies with no coding required.
+                </p>
+            </div>
+            <div class="course-presenter">
+                <div class="presenter-img presenter-12"></div>
+                <div class="presenter-name">
+                    <p>AlgoBuilderX</p>
+                </div>
+            </div>
+            <div>
+
+                <a href="#" class="btn btn-block stretched-link" data-toggle="modal"
+                    data-target=".course-12-details">See Details</a>
+                <span class="price text-center">$25/month</span>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-6 position-relative course-item">
+            <div class="learnworlds-image img-11"></div>
+            <div class="item-text">
+                <span class="badge badge-warning">Thai</span>
+                <h3>การแตกตัวของแท่งเทียน</h3>
+                <p>เป็นเทคนิคที่สามารถวิเคราะห์จำนวนแท่งเทียนและเข้าใจทิศทางของแท่งเทียน ด้วยการคำนวณรูปภาพ เดี๋ยวส่งให้
+                </p>
+            </div>
+            <div class="course-presenter">
+                <div class="presenter-img presenter-11"></div>
+                <div class="presenter-name">
+                    <p>KrazyjacK</p>
+                </div>
+            </div>
+            <div>
+
+                <a href="#" class="btn btn-block stretched-link" data-toggle="modal"
+                    data-target=".course-11-details">See Details</a>
+                <span class="price text-center">$150</span>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-6 position-relative course-item">
+            <div class="learnworlds-image img-10"></div>
+            <div class="item-text">
+                <span class="badge badge-warning">English</span> <span class="badge badge-danger">Monthly
+                    Subscription</span>
+                <h3>Gold Trading Signals by KLAUS </h3>
+                <p>XAU/USD trading signals designed to maximize daily profits and reduce risks.</p>
+            </div>
+            <div class="course-presenter">
+                <div class="presenter-img presenter-10"></div>
+                <div class="presenter-name">
+                    <p>KLAUS HARRIS</p>
+                </div>
+            </div>
+            <div>
+
+                <a href="#" class="btn btn-block stretched-link" data-toggle="modal"
+                    data-target=".course-10-details">See Details</a>
+                <span class="price text-center">$10/month</span>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-6 position-relative course-item">
+            <div class="learnworlds-image img-9"></div>
+            <div class="item-text">
+                <span class="badge badge-warning">English</span> <span class="badge badge-danger">Monthly
+                    Subscription</span>
+                <h3>Apollo Indicator</h3>
+                <p>A $25 monthly subscription to a sophisticated trading signals script for clear and actionable buy and
+                    sell signals on any chart you choose.</p>
+            </div>
+            <div class="course-presenter">
+                <div class="presenter-img presenter-9"></div>
+                <div class="presenter-name">
+                    <p>Apollo Team</p>
+                </div>
+            </div>
+            <div>
+
+                <a href="#" class="btn btn-block stretched-link" data-toggle="modal" data-target=".course-9-details">See
+                    Details</a>
+                <span class="price text-center">$25/month</span>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-6 position-relative course-item">
+            <div class="learnworlds-image img-8"></div>
+            <div class="item-text">
+                <span class="badge badge-warning">English</span>
+                <h3>Freelance Goldmine</h3>
+                <p>Break Free from the 9-to-5 Grind and Transform Your Career to Become a Successful Online Freelancer
+                    in 90 Days or Less.</p>
+            </div>
+            <div class="course-presenter">
+                <div class="presenter-img presenter-8"></div>
+                <div class="presenter-name">
+                    <p>Patrick Thonglor</p>
+                </div>
+            </div>
+            <div>
+
+                <a href="#" class="btn btn-block stretched-link" data-toggle="modal" data-target=".course-8-details">See
+                    Details</a>
+                <span class="price text-center">$89.99</span>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 position-relative course-item">
+            <div class="learnworlds-image img-4"></div>
+            <div class="item-text">
+                <span class="badge badge-warning">English</span>
+                <h3>Beating The Banks</h3>
+                <p>Just a few words people are saying about my courses, "reliable, genuine, supportive, selfless..." the
+                    list goes on.</p>
+            </div>
+            <div class="course-presenter">
+                <div class="presenter-img presenter-4"></div>
+                <div class="presenter-name">
+                    <p>Luke Gravelle</p>
+                </div>
+            </div>
+            <div>
+
+                <a href="#" class="btn btn-block stretched-link" data-toggle="modal" data-target=".course-4-details">See
+                    Details</a>
+                <span class="price text-center">$150</span>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 position-relative course-item">
+            <div class="learnworlds-image img-2"></div>
+            <div class="item-text">
+                <span class="badge badge-warning">English</span>
+                <h3>Mat's Monster Money Making Trader Course</h3>
+                <p>This course simplifes the complex and confusing world of trading. It's specifically built to help
+                    beginners get started.</p>
+            </div>
+            <div class="course-presenter">
+                <div class="presenter-img presenter-2"></div>
+                <div class="presenter-name">
+                    <p>Mathew Clarke</p>
+                </div>
+            </div>
+            <div>
+
+                <a href="#" class="btn btn-block stretched-link" data-toggle="modal" data-target=".course-2-details">See
+                    Details</a>
+                <span class="price text-center">$150</span>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 position-relative course-item">
+            <div class="learnworlds-image img-3"></div>
+            <div class="item-text">
+                <span class="badge badge-warning">English</span>
+                <h3>The Traders Studio<br />&nbsp;</h3>
+                <p>Combines conversational talks, in-depth technical education and real time market trading. Making
+                    complex trading, simple.</p>
+            </div>
+            <div class="course-presenter">
+                <div class="presenter-img presenter-3"></div>
+                <div class="presenter-name">
+                    <p>James Trescothick</p>
+                </div>
+            </div>
+            <div>
+
+                <a href="#" class="btn btn-block stretched-link" data-toggle="modal" data-target=".course-3-details">See
+                    Details</a>
+                <span class="price text-center">$300</span>
+            </div>
+        </div>
+
+        <!-- Free Courses -->
+        <div class="col-lg-4 col-md-6 col-sm-6 position-relative course-item">
+            <div class="learnworlds-image img-5"></div>
+            <div class="item-text">
+                <span class="badge badge-warning">English</span>
+                <h3>Partner's Education<br />&nbsp;</h3>
+                <p>Reskill to become a partner in the finance industry or upskill what you already know to grow.</p>
+            </div>
+            <div class="course-presenter">
+                <div class="presenter-img presenter-5"></div>
+                <div class="presenter-name">
+                    <p>Jason Lee</p>
+                </div>
+            </div>
+            <div>
+
+                <a href="#" class="btn btn-block stretched-link" data-toggle="modal" data-target=".course-5-details">See
+                    Details</a>
+                <span class="price text-center">Free</span>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 position-relative course-item">
+            <div class="learnworlds-image img-6"></div>
+            <div class="item-text">
+                <span class="badge badge-warning">English</span>
+                <h3>Financial Literacy<br />&nbsp;</h3>
+                <p>The financial plan of your parents will not work for your generation. Money really does buy
+                    happiness.</p>
+            </div>
+            <div class="course-presenter">
+                <div class="presenter-img presenter-6"></div>
+                <div class="presenter-name">
+                    <p>Jason Lee</p>
+                </div>
+            </div>
+            <div>
+
+                <a href="#" class="btn btn-block stretched-link" data-toggle="modal" data-target=".course-6-details">See
+                    Details</a>
+                <span class="price text-center">Free</span>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 position-relative course-item">
+            <div class="learnworlds-image img-7"></div>
+            <div class="item-text">
+                <span class="badge badge-warning">English</span>
+                <h3>Trading Bites<br />&nbsp;</h3>
+                <p>Easily digestible video snippets on what traders should know. In 60 seconds or less.</p>
+            </div>
+            <div class="course-presenter">
+                <div class="presenter-img presenter-7"></div>
+                <div class="presenter-name">
+                    <p>Monaxa</p>
+                </div>
+            </div>
+            <div>
+
+                <a href="#" class="btn btn-block stretched-link" data-toggle="modal" data-target=".course-7-details">See
+                    Details</a>
+                <span class="price text-center">Free</span>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!--<div class="modal fade course-1-details" tabindex="-1" role="dialog" aria-labelledby="course-1" aria-hidden="true">
+	<div class="modal-dialog modal-xl">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">Únete hoy</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				%widget_acadamis_course_one_content%
+			</div>
+		</div>
+	</div>
+</div>-->
+<div class="modal fade course-12-details" tabindex="-1" role="dialog" aria-labelledby="course-12" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Subscribe Today</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                %widget_acadamis_course_twelve_content%
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade course-11-details" tabindex="-1" role="dialog" aria-labelledby="course-11" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <!--<h5 class="modal-title">Join Today</h5>-->
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                %widget_acadamis_course_eleven_content%
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade course-10-details" tabindex="-1" role="dialog" aria-labelledby="course-10" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Subscribe Today</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                %widget_acadamis_course_ten_content%
+                %widget_acadamis_course_ten_subscribed%
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade course-9-details" tabindex="-1" role="dialog" aria-labelledby="course-9" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Subscribe Today</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                %widget_acadamis_course_nine_content%
+                %widget_acadamis_course_nine_subscribed%
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade course-8-details" tabindex="-1" role="dialog" aria-labelledby="course-8" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Join today</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                %widget_acadamis_course_eight_content%
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade course-4-details" tabindex="-1" role="dialog" aria-labelledby="course-4" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Join today</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                %widget_acadamis_course_four_content%
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade course-2-details" tabindex="-1" role="dialog" aria-labelledby="course-2" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Join today</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                %widget_acadamis_course_two_content%
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade course-3-details" tabindex="-1" role="dialog" aria-labelledby="course-3" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Join today</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                %widget_acadamis_course_three_content%
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade course-5-details" tabindex="-1" role="dialog" aria-labelledby="course-5" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Join today</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                %widget_acadamis_course_five_content%
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade course-6-details" tabindex="-1" role="dialog" aria-labelledby="course-6" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Join today</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                %widget_acadamis_course_six_content%
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade course-7-details" tabindex="-1" role="dialog" aria-labelledby="course-7" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">60' or Less</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                %widget_acadamis_course_seven_content%
+            </div>
+        </div>
+    </div>
+</div>
