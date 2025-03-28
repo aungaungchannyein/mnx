@@ -1,0 +1,96 @@
+<script>
+    window.onload = function() {
+        var fullname = document.getElementsByClassName('nav_profile_full_name')[0].innerHTML;
+        const firstName = fullname.split(" ");
+        var userid = document.getElementsByClassName('nav_profile_user_id')[0].innerHTML;
+        var fieldNameElement = document.getElementById('clientName');
+        if (fieldNameElement) {
+            fieldNameElement.innerHTML = firstName[0];
+        }
+
+        var requestOptions = {
+            method: 'GET',
+            redirect: 'follow'
+        };
+   fetch("https://apilive.monaxa.com/rebateapi/public/messages/user/" + userid, requestOptions)
+            .then(response => response.json())
+            .then(data => populateTable(data))
+            .catch(error => console.log('error', error));
+    
+        function populateTable(data) {
+            var table = document.getElementById("messageTable");
+            var tableNumber = 1;
+    
+            data.forEach(function(message) {
+            if (message.isDeleted === 0) {
+                var row = table.insertRow();
+    
+                var numberCell = row.insertCell();
+                numberCell.textContent = tableNumber++;
+				
+				var isRead = message.isRead;
+				
+                var subjectCell = row.insertCell();
+                var subjectLink = document.createElement("a");
+                subjectLink.href = "https://account.monaxa.com/messages/inbox/" + message.id;
+                subjectLink.textContent = message.subject;
+                subjectLink.target = "_blank"; 
+                if(isRead==0){
+                subjectLink.style = "font-weight: bold; color: #000";
+                }
+                subjectCell.appendChild(subjectLink);
+    
+                var createdAtCell = row.insertCell();
+                var createdAt = new Date(message.createdAt);
+                var day = createdAt.getDate();
+                var month = createdAt.getMonth() + 1; // Adding 1 because months are zero-based
+                var year = createdAt.getFullYear();
+                var time = createdAt.toLocaleTimeString([], { hour: 'numeric', minute: 'numeric' });
+                var createdAtFormatted = `${day}/${month}/${year}, ${time}`;
+    
+                createdAtCell.textContent = createdAtFormatted;
+            }
+            });
+        }
+    };
+    </script>
+
+<div style="padding:30px 0;">
+<div style="max-width:95%; margin:0 auto;">
+<div id="dashboardSlide" class="carousel slide" data-ride="carousel">
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+
+ %widget_ftd_bonus_banner%
+ %widget_recurring_bonus_banner%
+ %widget_ftd_bonus_banner_jp%
+ %widget_recurring_bonus_banner_jp%
+ %widget_ftd_bonus_banner_myth%
+
+ </div>
+
+  <button class="carousel-control-prev" type="button" data-target="#dashboardSlide" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-target="#dashboardSlide" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </button>
+
+</div>
+</div>
+<br /><br />
+
+%widget_welcome_back%
+%widget_three_steps_default%
+%widget_three_steps_has_account%
+%widget_get_while_you_can%
+
+ <br /><br />
+
+
+%widget_did_you_know%
+%widget_you_got_mail%
+</div>

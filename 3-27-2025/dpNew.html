@@ -1,0 +1,566 @@
+<main class="inner-page" id="main">
+    <section style="background-color: white;">
+        <style type="text/css">
+            .dwth {
+                /* border-right: 1px solid #dee2e6 !important; */
+                text-align: center !important;
+                min-width: 185px;
+                max-width: 185px;
+            }
+
+            th,
+            td {
+                text-align: center;
+                /* font-size: 10px; */
+            }
+
+            .border-radius-btn {
+                border-radius: 30px !important;
+                font-size: 25px;
+                font-weight: bold;
+                width: 350px !important;
+
+                margin: inherit !important;
+            }
+
+            #depoWithdraw>li {
+                width: inherit !important;
+            }
+
+            .btn-get-started {
+                border-radius: 60px !important;
+                font-size: 30px;
+                padding: 10px !important;
+                width: 230px !important;
+                font-weight: bold !important;
+            }
+
+            .col-flex {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .img-icon-width {
+                width: 60%;
+            }
+
+            .box-dash {
+                padding: 80px;
+                background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='30' ry='30' stroke='%23FEDC56' stroke-width='4' stroke-dasharray='6%2c 14' stroke-dashoffset='69' stroke-linecap='square'/%3e%3c/svg%3e");
+                border-radius: 30px;
+            }
+
+            /* .nav-link {
+                border-color:#F7BC5C;
+                background-color: white;
+            } */
+
+            .nav-link1 {
+                border-color: #fedc56 !important;
+                background-color: white !important;
+                color: black !important;
+            }
+
+            .nav-link1.active {
+                background-color: #fedc56 !important;
+                /* Active button background */
+                color: black !important;
+                /* Active button text color */
+            }
+
+            /*  */
+
+            @media (max-width: 768px) {
+
+            
+                .custom-container {
+                    padding: 0 10px !important;
+                    /* Prevents content from touching the screen edges */
+                }
+
+                .table-responsive {
+                    overflow-x: hidden;
+                    /* Prevents horizontal scrolling */
+                    display: block;
+                    width: 100%;
+                }
+
+                table {
+                    width: 100%;
+                    /* Ensures table takes full width */
+                    table-layout: fixed;
+                    /* Prevents overflow */
+                    word-wrap: break-word;
+                    /* Allows text to wrap */
+                    padding: 0px;
+                }
+
+                th,
+                td {
+                    font-size: 10px;
+                    /* Smaller font size */
+                    padding: 2px !important;
+                    */
+                }
+
+                .nav-tabs {
+                    flex-wrap: wrap;
+                    /* Allows tabs to wrap on small screens */
+                }
+
+                .nav-item {
+                    width: 50%;
+                    /* Makes tabs occupy equal space */
+                    text-align: center;
+                }
+
+                .h5 {
+                    font-size: 10px;
+                    padding: 5px !important;
+
+                    body {
+                        font-size: 12px;
+                        /* Reduce the overall font size */
+                    }
+
+                    h1,
+                    h2,
+                    h6,
+                    h3 {
+                        font-size: smaller;
+                        /* Reduce heading sizes */
+                    }
+                }
+
+
+                .nav-tabs {
+        display: flex;
+        justify-content: space-between; /* Push buttons to left and right */
+        padding: 0;
+    }
+    .nav-item {
+        flex: unset; /* Remove equal spacing */
+    }
+    .nav-item button {
+        font-size: 12px; /* Smaller font size */
+        padding: 5px 10px; /* Reduce button padding */
+        width: auto; /* Adjust button width dynamically */
+        width: 150px !important;
+        height: 35px; /* Adjust button height */
+    }
+
+    .box-dash {
+        padding: 16px 14px;
+            }
+         .btn-get-started {
+            font-size: 12px !important;
+         }
+         h6{
+            font-size: 12px !important;
+         }
+         .dwth {
+                width: 90px !important;
+            }
+        </style>
+
+        <div>
+            <div class="a-wb">
+                <section class="no-padding a-wb">
+                    <div class="no-padding"><a href="https://account.monaxa.com/login" target="_blank"><img
+                                class="hero-banner-mnx" style="padding-top: 0%;"
+                                src="https://cdn.learnwurks.com/assets/img/asset_design_update/HeroBanner.png" /></a>
+                    </div>
+                </section>
+            </div>
+
+            <div class="a-mb">
+                <section class="no-padding a-mb">
+                    <div class="no-padding"><a href="https://account.monaxa.com/login" target="_blank"><img
+                                class="hero-banner-mnx" style="padding-top: 0%;"
+                                src="https://cdn.learnwurks.com/assets/img/asset_design_update/HeroBanner-M.png" /></a>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="container mt-70">
+
+
+            <div class="custom-container" style="padding: 0 180px;">
+                <ul class="nav nav-tabs justify-content-between mt-50" id="depoWithdraw" role="tablist"
+                    style="margin: 0;">
+                    <li class="nav-item h1" role="presentation"><button aria-controls="deposit" aria-selected="true"
+                            class="nav-link nav-link1 mx-auto border-radius-btn" data-bs-target="#deposit"
+                            data-bs-toggle="tab" id="deposit-tab" role="tab" type="button">Deposit</button></li>
+                    <li class="nav-item h1" role="presentation"><button aria-controls="withdrawal" aria-selected="false"
+                            class="nav-link nav-link1 mx-auto border-radius-btn active" data-bs-target="#withdrawal"
+                            data-bs-toggle="tab" id="withdrawal-tab" role="tab" type="button">Withdrawal</button></li>
+                </ul>
+
+                <div class="tab-content mt-20 mb-70" id="depoWithdrawContent"><!-- Deposit Tab Content -->
+                    <div aria-labelledby="deposit-tab" class="tab-pane fade" id="deposit" role="tabpanel">
+                        <div class="table-responsive">
+                            <table class="table table-striped mb-30">
+                                <tbody>
+                                    <tr>
+                                        <th class="h5 dwth" rowspan="2" style="
+                                background: #fee48f;
+                                border-top-left-radius: 20px;
+                                border-bottom-left-radius: 20px;
+                              "><strong>Cryptocurrency</strong></th>
+                                        <!-- <th class="h5" scope="col" style="background: #fedc56"><strong>Network</strong></th> -->
+                                        <th class="h5" scope="col" style="background: #fedc56"><strong>Min
+                                                Deposit</strong></th>
+                                        <th class="h5" scope="col" style="background: #fedc56"><strong>Processing
+                                                Time</strong></th>
+                                        <th class="h5" scope="col"
+                                            style="background: #fedc56; border-top-right-radius: 20px">
+                                            <strong>Fees</strong>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <!-- <td>USDT TRC-20</td> -->
+                                        <td style="background-color: #FFF4E1;">20 USDT</td>
+                                        <td style="background-color: #fee48f;">Min 15 mins</td>
+                                        <td style="border-bottom-right-radius: 20px;background-color: #FFF4E1;">Covered
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="table table-striped mb-30">
+                                <tbody>
+                                    <tr>
+                                        <th class="h5 dwth" rowspan="2" style="
+                                background: #fee48f;
+                                border-top-left-radius: 20px;
+                                border-bottom-left-radius: 20px;
+                              "><strong>Card</strong></th>
+
+                                        <th class="h5" scope="col" style="background: #fedc56"><strong>Min
+                                                Deposit</strong></th>
+                                        <th class="h5" scope="col" style="background: #fedc56"><strong>Processing
+                                                Time</strong></th>
+                                        <th class="h5" scope="col"
+                                            style="background: #fedc56; border-top-right-radius: 20px">
+                                            <strong>Fees</strong>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <!-- <td>USDT TRC-20</td> -->
+                                        <td style="background-color: #FFF4E1;">15 USD</br>(or equivalent currency)</td>
+                                        <td style="background-color: #fee48f;">Instant</td>
+                                        <td style="border-bottom-right-radius: 20px;background-color: #FFF4E1;">Covered
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="table table-striped mb-30">
+                                <tbody>
+                                    <tr>
+                                        <th class="h5 dwth" rowspan="2" style="
+                                background: #fee48f;
+                                border-top-left-radius: 20px;
+                                border-bottom-left-radius: 20px;
+                              "><strong>E-Wallet</strong></th>
+
+                                        <th class="h5" scope="col" style="background: #fedc56"><strong>Min
+                                                Deposit</strong></th>
+                                        <th class="h5" scope="col" style="background: #fedc56"><strong>Processing
+                                                Time</strong></th>
+                                        <th class="h5" scope="col"
+                                            style="background: #fedc56; border-top-right-radius: 20px">
+                                            <strong>Fees</strong>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <!-- <td>USDT TRC-20</td> -->
+                                        <td style="background-color: #FFF4E1;">15 USD</br>(or equivalent currency)</td>
+                                        <td style="background-color: #fee48f;">Instant</td>
+                                        <td style="border-bottom-right-radius: 20px;background-color: #FFF4E1;">Covered
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="table table-striped mb-30">
+                                <tbody>
+                                    <tr>
+                                        <th class="h5 dwth" rowspan="2" style="
+                                background: #fee48f;
+                                border-top-left-radius: 20px;
+                                border-bottom-left-radius: 20px;
+                              "><strong>Local Online</br>Banking</strong></th>
+
+                                        <th class="h5" scope="col" style="background: #fedc56"><strong>Min
+                                                Deposit</strong></th>
+                                        <th class="h5" scope="col" style="background: #fedc56"><strong>Processing
+                                                Time</strong></th>
+                                        <th class="h5" scope="col"
+                                            style="background: #fedc56; border-top-right-radius: 20px">
+                                            <strong>Fees</strong>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <!-- <td>USDT TRC-20</td> -->
+                                        <td style="background-color: #FFF4E1;">15 USD</br>(or equivalent currency)</td>
+                                        <td style="background-color: #fee48f;">Instant</td>
+                                        <td style="border-bottom-right-radius: 20px;background-color: #FFF4E1;">Covered
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="table table-striped mb-30">
+                                <tbody>
+                                    <tr>
+                                        <th class="h5 dwth" rowspan="2" style="
+                                background: #fee48f;
+                                border-top-left-radius: 20px;
+                                border-bottom-left-radius: 20px;
+                              "><strong>International</br>Bank Wire</strong></th>
+
+                                        <th class="h5" scope="col" style="background: #fedc56"><strong>Min
+                                                Deposit</strong></th>
+                                        <th class="h5" scope="col" style="background: #fedc56"><strong>Processing
+                                                Time</strong></th>
+                                        <th class="h5" scope="col"
+                                            style="background: #fedc56; border-top-right-radius: 20px">
+                                            <strong>Fees</strong>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <!-- <td>USDT TRC-20</td> -->
+                                        <td style="background-color: #FFF4E1;">500 USD</br>(or equivalent currency)</td>
+                                        <td style="background-color: #fee48f;">2-5 Bussiness Days</td>
+                                        <td style="border-bottom-right-radius: 20px;background-color: #FFF4E1;"> Not</br>
+                                            Covered</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <h2 style="font-style: italic; font-size: 15px;">*The above should be used as a general
+                                guideline. For details and regional options, go to the 'My Banking' section in the
+                                Monaxa Portal.</h2>
+
+                        </div>
+
+                        <div class="text-center" style="font-size: 25px;"><a class="btn-get-started"
+                                href="https://account.monaxa.com/login">Deposit</a></div>
+                    </div>
+                    <!-- Withdrawal Tab Content -->
+
+                    <div aria-labelledby="withdrawal-tab" class="tab-pane fade show active" id="withdrawal"
+                        role="tabpanel">
+                        <div class="table-responsive">
+
+
+
+                            <table class="table table-striped mb-30">
+                                <tbody>
+                                    <tr>
+                                        <th class="h5 dwth" rowspan="2" style="
+                                background: #fee48f;
+                                border-top-left-radius: 20px;
+                                border-bottom-left-radius: 20px;
+                              "><strong>Cryptocurrency  </strong></th>
+                                        <!-- <th class="h5" scope="col" style="background: #fedc56"><strong>Network</strong></th> -->
+                                        <th class="h5" scope="col" style="background: #fedc56"><strong>Min
+                                                Withdrawal</strong></th>
+                                        <th class="h5" scope="col" style="background: #fedc56"><strong>Processing
+                                                Time</strong></th>
+                                        <th class="h5" scope="col"
+                                            style="background: #fedc56; border-top-right-radius: 20px">
+                                            <strong>Fees</strong>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <!-- <td>USDT TRC-20</td> -->
+                                        <td style="background-color: #FFF4E1;">20 USDT</td>
+                                        <td style="background-color: #fee48f;">Up to 24 working hours</td>
+                                        <td style="border-bottom-right-radius: 20px;background-color: #FFF4E1;">Covered
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="table table-striped mb-30">
+                                <tbody>
+                                    <tr>
+                                        <th class="h5 dwth" rowspan="2" style="
+                                background: #fee48f;
+                                border-top-left-radius: 20px;
+                                border-bottom-left-radius: 20px;
+                              "><strong>E-Wallet</strong></th>
+
+                                        <th class="h5" scope="col" style="background: #fedc56"><strong>Min
+                                                Withdrawal</strong></th>
+                                        <th class="h5" scope="col" style="background: #fedc56"><strong>Processing
+                                                Time</strong></th>
+                                        <th class="h5" scope="col"
+                                            style="background: #fedc56; border-top-right-radius: 20px">
+                                            <strong>Fees</strong>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <!-- <td>USDT TRC-20</td> -->
+                                        <td style="background-color: #FFF4E1;">15 USD</br>(or equivalent currency)</td>
+                                        <td style="background-color: #fee48f;">Instant</td>
+                                        <td style="border-bottom-right-radius: 20px;background-color: #FFF4E1;">Covered
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="table table-striped mb-30">
+                                <tbody>
+                                    <tr>
+                                        <th class="h5 dwth" rowspan="2" style="
+                                background: #fee48f;
+                                border-top-left-radius: 20px;
+                                border-bottom-left-radius: 20px;
+                              "><strong>Local Depositor</strong></th>
+
+                                        <th class="h5" scope="col" style="background: #fedc56"><strong>Min
+                                                Withdrawal</strong></th>
+                                        <th class="h5" scope="col" style="background: #fedc56"><strong>Processing
+                                                Time</strong></th>
+                                        <th class="h5" scope="col"
+                                            style="background: #fedc56; border-top-right-radius: 20px">
+                                            <strong>Fees</strong>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <!-- <td>USDT TRC-20</td> -->
+                                        <td style="background-color: #FFF4E1;">15 USD</br>(or equivalent currency)</td>
+                                        <td style="background-color: #fee48f;">up to 24 working hours</td>
+                                        <td style="border-bottom-right-radius: 20px;background-color: #FFF4E1;">Covered
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="table table-striped mb-30">
+                                <tbody>
+                                    <tr>
+                                        <th class="h5 dwth" rowspan="2" style="
+                                background: #fee48f;
+                                border-top-left-radius: 20px;
+                                border-bottom-left-radius: 20px;
+                              "><strong>Local Online</br>Banking</strong></th>
+
+                                        <th class="h5" scope="col" style="background: #fedc56"><strong>Min
+                                                Withdrawal</strong></th>
+                                        <th class="h5" scope="col" style="background: #fedc56"><strong>Processing
+                                                Time</strong></th>
+                                        <th class="h5" scope="col"
+                                            style="background: #fedc56; border-top-right-radius: 20px">
+                                            <strong>Fees</strong>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <!-- <td>USDT TRC-20</td> -->
+                                        <td style="background-color: #FFF4E1;">15 USD</br>(or equivalent currency)</td>
+                                        <td style="background-color: #fee48f;">Instant</td>
+                                        <td style="border-bottom-right-radius: 20px;background-color: #FFF4E1;">Covered
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="table table-striped mb-30">
+                                <tbody>
+                                    <tr>
+                                        <th class="h5 dwth" rowspan="2" style="
+                                background: #fee48f;
+                                border-top-left-radius: 20px;
+                                border-bottom-left-radius: 20px;
+                              "><strong>International</br>Bank Wire</strong></th>
+
+                                        <th class="h5" scope="col" style="background: #fedc56"><strong>Min
+                                                Withdrawal</strong></th>
+                                        <th class="h5" scope="col" style="background: #fedc56"><strong>Processing
+                                                Time</strong></th>
+                                        <th class="h5" scope="col"
+                                            style="background: #fedc56; border-top-right-radius: 20px">
+                                            <strong>Fees</strong>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <!-- <td>USDT TRC-20</td> -->
+                                        <td style="background-color: #FFF4E1;">500 USD</br>(or equivalent currency)</td>
+                                        <td style="background-color: #fee48f;">2-5 Bussiness Days</td>
+                                        <td style="border-bottom-right-radius: 20px;background-color: #FFF4E1;"> Not</br>
+                                            Covered</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <h2 style="font-style: italic; font-size: 15px;">*The above should be used as a general
+                                guideline. For details and regional options, go to the 'My Banking' section in the
+                                Monaxa Portal.</h2>
+
+
+                        </div>
+
+                        <div class="text-center mt-30" style="font-size: 25px;"><a class="btn-get-started"
+                                href="https://account.monaxa.com/login">Withdrawal</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-50">
+                <div class="col-lg-12 col-md-12">
+                    <div class="container box-dash" style="background-color: rgb(238, 235, 226, .8)">
+                        <h1>Withdrawal Priority Procedure</h1>
+
+                        <h2>Monaxa works hard to protect against fraud and money laundering using this simple and clear
+                            policy.</h2>
+
+                        <h6 style="color: black;">All withdrawal/refunds go back to the originating source of funds
+                            first.</br>
+
+                            You cannot deposit from one method and withdrawal to another until the original amount
+                            deposited is complete.</h6>
+
+                        <h6 style="color: black;">Example:</br>
+
+                            Made a deposit via Bank Card?</br>
+
+                            Your withdrawn funds will go back to the original depositing method in the original
+                            currency. Until it exceeds your original deposit amount. If exceeded, the remaining funds
+                            will be processed via your choice as an E-wallet, Crypto wallet, Local Bank Transfer, Local
+                            Deposit or International Bank transfer.</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- <script>
+            $(document).ready(function () {
+              var cc = sessionStorage.getItem("country_code");
+              var ad = window.location.protocol + "//" + window.location.hostname;
+              if (cc == "MY") {
+                location.replace(ad + "/en/deposits-withdrawals-my");
+              } else if (cc == "SG") {
+                location.replace(ad + "/en/deposits-withdrawals-sg");
+              } else if (cc == "IN") {
+                location.replace(ad + "/en/deposits-withdrawals-ind");
+              } else if (cc == "BN") {
+                location.replace(ad + "/en/deposits-withdrawals-bn");
+              } else if (cc == "TH") {
+                location.replace(ad + "/en/deposits-withdrawals-th");
+              } else if (cc == "VN") {
+                location.replace(ad + "/en/deposits-withdrawals-vn");
+              } else if (cc == "LA") {
+                location.replace(ad + "/en/deposits-withdrawals-la");
+              } else if (cc == "BD") {
+                location.replace(ad + "/en/deposits-withdrawals-bd");
+              } else if (cc == "KH") {
+                location.replace(ad + "/en/deposits-withdrawals-kh");
+              } else {
+                console.log("others country");
+              }
+            });
+          </script> -->
+</main>
