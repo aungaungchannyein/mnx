@@ -1,0 +1,207 @@
+<main class="inner-page" id="main">
+    <section style="background-color: white;">
+        <style>
+            .custom-tab {
+                display: none;
+            }
+
+            .custom-tab.show {
+                display: block;
+            }
+
+            th,
+            td {
+                text-align: center;
+            }
+
+            .border-radius-btn {
+                border-radius: 30px !important;
+                font-size: 25px;
+                font-weight: bold;
+                width: 350px !important;
+                margin: inherit !important;
+            }
+
+            .btn-get-started {
+                border-radius: 60px !important;
+                font-size: 30px;
+                padding: 10px !important;
+                width: 230px !important;
+                font-weight: bold !important;
+            }
+
+            .box-dash {
+                padding: 80px;
+                background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='30' ry='30' stroke='%23FEDC56' stroke-width='4' stroke-dasharray='6%2c 14' stroke-dashoffset='69' stroke-linecap='square'/%3e%3c/svg%3e");
+                border-radius: 30px;
+            }
+
+            .nav-link1 {
+                border-color: #fedc56 !important;
+                background-color: white !important;
+                color: black !important;
+            }
+
+            .nav-link1.active {
+                background-color: #fedc56 !important;
+                color: black !important;
+            }
+
+            @media (max-width: 768px) {
+                .custom-container {
+                    padding: 0 20px !important;
+                }
+
+                .nav-tabs {
+                    display: block;
+                    margin-top: 10px;
+                }
+
+                .nav-item {
+                    width: 100%;
+                    margin-bottom: 10px;
+                    text-align: center;
+                }
+
+                .btn-get-started {
+                    font-size: 16px !important;
+                    width: 80%;
+                }
+
+                .hero-banner-mnx {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        </style>
+
+        <div>
+            <div class="a-wb">
+                <section class="no-padding a-wb">
+                    <div class="no-padding">
+                        <a href="https://account.monaxa.com/login" target="_blank">
+                            <img class="hero-banner-mnx" style="padding-top: 0%;" 
+                                 src="https://cdn.learnwurks.com/assets/img/asset_design_update/HeroBanner.png" />
+                        </a>
+                    </div>
+                </section>
+            </div>
+
+            <div class="a-mb">
+                <section class="no-padding a-mb">
+                    <div class="no-padding">
+                        <a href="https://account.monaxa.com/login" target="_blank">
+                            <img class="hero-banner-mnx" style="padding-top: 0%;" 
+                                 src="https://cdn.learnwurks.com/assets/img/asset_design_update/HeroBanner-M.png" />
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="custom-container" style="position: relative;">
+                <ul class="nav nav-tabs justify-content-between mt-50" id="depoWithdraw" role="tablist" style="margin: 0;">
+                    <li class="nav-item h1" role="presentation">
+                        <button class="nav-link nav-link1 mx-auto border-radius-btn" id="deposit-tab" data-bs-toggle="tab" 
+                                data-bs-target="#deposit" type="button" role="tab" aria-controls="deposit" aria-selected="false">
+                            Deposit
+                        </button>
+                    </li>
+                    <li class="nav-item h1" role="presentation">
+                        <button class="nav-link nav-link1 mx-auto border-radius-btn active" id="withdrawal-tab" data-bs-toggle="tab" 
+                                data-bs-target="#withdrawal" type="button" role="tab" aria-controls="withdrawal" aria-selected="true">
+                            Withdrawal
+                        </button>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+                    <!-- Deposit Section -->
+                    <div class="tab-pane fade custom-tab" id="deposit" role="tabpanel" aria-labelledby="deposit-tab">
+                        <div class="a-wb">
+                            <section class="no-padding a-wb">
+                                <div class="no-padding">
+                                    <img class="hero-banner-mnx" style="padding-top: 0%;" 
+                                         src="https://cdn.learnwurks.com/assets/img/asset_design_update/deposit-withdrawal/Deposits-Tab.png" />
+                                </div>
+                            </section>
+                        </div>
+                        <div class="a-mb">
+                            <section class="no-padding a-mb">
+                                <div class="no-padding">
+                                    <img class="hero-banner-mnx" style="padding-top: 0%;" 
+                                         src="https://cdn.learnwurks.com/assets/img/asset_design_update/deposit-withdrawal/Deposits-Tab-M.png" />
+                                </div>
+                            </section>
+                        </div>
+                        <h6 style="font-style: italic; font-size: 15px; color: black; margin: 5px;">
+                            *The above should be used as a general guideline. For details and regional options, go to the 'My Banking' section in the Monaxa Portal.
+                        </h6>
+
+                        <div class="text-center mt-30" style="font-size: 25px;">
+                            <a class="btn-get-started" href="https://account.monaxa.com/login">Deposit</a>
+                        </div>
+                    </div>
+
+                    <!-- Withdrawal Section -->
+                    <div class="tab-pane fade show active custom-tab" id="withdrawal" role="tabpanel" aria-labelledby="withdrawal-tab">
+                        <div class="a-wb">
+                            <section class="no-padding a-wb">
+                                <div class="no-padding">
+                                    <img class="hero-banner-mnx" style="padding-top: 0%;" 
+                                         src="https://cdn.learnwurks.com/assets/img/asset_design_update/deposit-withdrawal/Withdrawals-Tab.png" />
+                                </div>
+                            </section>
+                        </div>
+                        <div class="a-mb">
+                            <section class="no-padding a-mb">
+                                <div class="no-padding">
+                                    <img class="hero-banner-mnx" style="padding-top: 0%;" 
+                                         src="https://cdn.learnwurks.com/assets/img/asset_design_update/deposit-withdrawal/Withdrawals-Tab-M.png" />
+                                </div>
+                            </section>
+                        </div>
+                        <h6 style="font-style: italic; font-size: 15px; color: black; margin: 5px;">
+                            *The above should be used as a general guideline. For details and regional options, go to the 'My Banking' section in the Monaxa Portal.
+                        </h6>
+
+                        <div class="text-center mt-30" style="font-size: 25px;">
+                            <a class="btn-get-started" href="https://account.monaxa.com/login">Withdrawal</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-50">
+            <div class="col-lg-12 col-md-12">
+                <div class="container box-dash" style="background-color: rgb(238, 235, 226, .8)">
+                    <h1>Withdrawal Priority Procedure</h1>
+
+                    <h2>Monaxa works hard to protect against fraud and money laundering using this simple and clear policy.</h2>
+
+                    <h6 style="color: black;">All withdrawal/refunds go back to the originating source of funds first.</br>
+                        You cannot deposit from one method and withdrawal to another until the original amount deposited is complete.
+                    </h6>
+
+                    <h6 style="color: black;">Example:</br>
+                        Made a deposit via Bank Card?</br>
+                        Your withdrawn funds will go back to the original depositing method in the original currency. Until it exceeds your original deposit amount. If exceeded, the remaining funds will be processed via your choice as an E-wallet, Crypto wallet, Local Bank Transfer, Local Deposit or International Bank transfer.
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('a[data-bs-toggle="tab"]').on('shown.bs.tab', function (e) {
+                var target = $(e.target).attr("href"); // Get target tab
+                $(target).addClass('show').removeClass('fade'); // Show target
+                $(target).siblings().removeClass('show').addClass('fade'); // Hide others
+            });
+        });
+    </script>
+</main>

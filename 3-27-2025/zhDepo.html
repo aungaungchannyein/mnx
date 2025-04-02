@@ -1,0 +1,568 @@
+<main class="inner-page" id="main">
+    <section style="background-color: white;">
+        <style type="text/css">
+            .dwth {
+                /* border-right: 1px solid #dee2e6 !important; */
+                text-align: center !important;
+                min-width: 185px;
+                max-width: 185px;
+            }
+
+            th,
+            td {
+                text-align: center;
+                width: 200px;
+                height: 85px;
+                padding: 0px;
+            }
+
+            .border-radius-btn {
+                border-radius: 30px !important;
+                font-size: 25px;
+                font-weight: bold;
+                width: 400px !important;
+                height: 70px;
+                margin: inherit !important;
+            }
+
+            #depoWithdraw>li {
+                width: inherit !important;
+            }
+
+            .btn-get-started {
+                border-radius: 60px !important;
+                font-size: 30px;
+                padding: 10px !important;
+                width: 230px !important;
+                font-weight: bold !important;
+            }
+
+            .col-flex {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .img-icon-width {
+                width: 60%;
+            }
+
+            .box-dash {
+                padding: 80px;
+                background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='30' ry='30' stroke='%23FEDC56' stroke-width='4' stroke-dasharray='6%2c 14' stroke-dashoffset='69' stroke-linecap='square'/%3e%3c/svg%3e");
+                border-radius: 30px;
+            }
+
+            /* .nav-link {
+                border-color:#F7BC5C;
+                background-color: white;
+            } */
+
+            .nav-link1 {
+                border-color: #fedc56 !important;
+                background-color: white !important;
+                color: black !important;
+            }
+
+            .nav-link1.active {
+                background-color: #fedc56 !important;
+                /* Active button background */
+                color: black !important;
+                /* Active button text color */
+            }
+
+            /*  */
+
+            @media (max-width: 768px) {
+
+
+                .custom-container {
+                    padding: 0 0px !important;
+                    /* Prevents content from touching the screen edges */
+                }
+
+                .table-responsive {
+                    overflow-x: hidden;
+                    /* Prevents horizontal scrolling */
+                    display: block;
+                    width: 100%;
+                }
+
+                table {
+                    width: 100%;
+                    /* Ensures table takes full width */
+                    table-layout: fixed;
+                    /* Prevents overflow */
+                    word-wrap: break-word;
+                    /* Allows text to wrap */
+                    padding: 0px;
+                }
+
+                th,
+                td {
+                    font-size: 10px;
+                    height: 50px;
+                    width: 78px !important;
+                    padding: 1px !important;
+
+                }
+
+                .nav-tabs {
+                    flex-wrap: wrap;
+                    /* Allows tabs to wrap on small screens */
+                }
+
+                .nav-item {
+                    width: 50%;
+                    /* Makes tabs occupy equal space */
+                    text-align: center;
+                }
+
+                .h5 {
+                    font-size: 10px;
+                    padding: 5px !important;
+                }
+
+                body {
+                    font-size: 12px;
+                    /* Reduce the overall font size */
+                }
+
+                h1,
+                h2,
+                h6,
+                h3 {
+                    font-size: smaller;
+                    /* Reduce heading sizes */
+                }
+
+
+
+                .nav-tabs {
+                    display: flex;
+                    justify-content: space-between;
+                    /* Push buttons to left and right */
+                    padding: 0;
+                }
+
+                .nav-item {
+                    flex: unset;
+                    /* Remove equal spacing */
+                }
+
+                .nav-item button {
+                    font-size: 12px;
+                    /* Smaller font size */
+                    padding: 5px 10px;
+                    /* Reduce button padding */
+                    width: auto;
+                    /* Adjust button width dynamically */
+                    width: 150px !important;
+                    height: 35px;
+                    /* Adjust button height */
+                }
+
+                .box-dash {
+                    padding: 16px 14px;
+                }
+
+                .btn-get-started {
+                    font-size: 12px !important;
+                }
+
+                h6 {
+                    font-size: 12px !important;
+                }
+
+                .dwth {
+                    width: 90px !important;
+                }
+            }
+
+            @media (min-width: 500px) {
+                .a-mb {
+                    display: none;
+                }
+
+                .a-wb {
+                    display: block;
+                }
+            }
+
+            @media (max-width: 500px) {
+                .a-wb {
+                    display: none;
+                }
+
+                .a-mb {
+                    display: block;
+                }
+            }
+        </style>
+
+        <div>
+            <div class="a-wb">
+                <section class="no-padding a-wb">
+                    <div class="no-padding"><a href="https://account.monaxa.com/login" target="_blank"><img
+                                class="hero-banner-mnx" style="padding-top: 0%;"
+                                src="https://cdn.learnwurks.com/assets/img/asset_design_update/HeroBanner.png" /></a>
+                    </div>
+                </section>
+            </div>
+
+            <div class="a-mb">
+                <section class="no-padding a-mb">
+                    <div class="no-padding"><a href="https://account.monaxa.com/login" target="_blank"><img
+                                class="hero-banner-mnx" style="padding-top: 0%;"
+                                src="https://cdn.learnwurks.com/assets/img/asset_design_update/HeroBanner-M.png" /></a>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="container mt-70">
+
+
+            <div class="custom-container" style="padding: 0 100px;">
+                <ul class="nav nav-tabs justify-content-between mt-50" id="depoWithdraw" role="tablist"
+                    style="margin: 0;">
+                    <li class="nav-item h1" role="presentation"><button aria-controls="deposit" aria-selected="true"
+                            class="nav-link nav-link1 mx-auto border-radius-btn" data-bs-target="#deposit"
+                            data-bs-toggle="tab" id="deposit-tab" role="tab" type="button">入金</button></li>
+                    <li class="nav-item h1" role="presentation"><button aria-controls="withdrawal" aria-selected="false"
+                            class="nav-link nav-link1 mx-auto border-radius-btn active" data-bs-target="#withdrawal"
+                            data-bs-toggle="tab" id="withdrawal-tab" role="tab" type="button">出金</button></li>
+                </ul>
+
+                <div class="tab-content mt-20 mb-70" id="depoWithdrawContent"><!-- Deposit Tab Content -->
+                    <div aria-labelledby="deposit-tab" class="tab-pane fade" id="deposit" role="tabpanel">
+                        <div class="table-responsive">
+                            <table class="table table-striped mb-30">
+                                <tbody>
+                                    <tr>
+                                        <th class="h5 dwth" rowspan="2" style="
+                                background: #fee48f;
+                                border-top-left-radius: 20px;
+                                border-bottom-left-radius: 20px;
+                              "><strong>加密货币</strong></th>
+                                        <!-- <th class="h5" scope="col" style="background: #fedc56"><strong>Network</strong></th> -->
+                                        <th class="h5" scope="col" style="background: #fedc56"><strong>最低入金金额</strong>
+                                        </th>
+                                        <th class="h5" scope="col" style="background: #fedc56"><strong>处理时间</strong>
+                                        </th>
+                                        <th class="h5" scope="col"
+                                            style="background: #fedc56; border-top-right-radius: 20px">
+                                            <strong>手续费</strong>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <!-- <td>USDT TRC-20</td> -->
+                                        <td style="background-color: #FFF4E1;">20 USDT</td>
+                                        <td style="background-color: #fee48f;">Min 15 mins</td>
+                                        <td style="border-bottom-right-radius: 20px;background-color: #FFF4E1;">覆盖
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="table table-striped mb-30">
+                                <tbody>
+                                    <tr>
+                                        <th class="h5 dwth" rowspan="2" style="
+                                background: #fee48f;
+                                border-top-left-radius: 20px;
+                                border-bottom-left-radius: 20px;
+                              "><strong>银行卡</strong></th>
+
+                                        <th class="h5" scope="col" style="background: #fedc56"><strong>最低入金金额</strong>
+                                        </th>
+                                        <th class="h5" scope="col" style="background: #fedc56"><strong>处理时间</strong>
+                                        </th>
+                                        <th class="h5" scope="col"
+                                            style="background: #fedc56; border-top-right-radius: 20px">
+                                            <strong>手续费</strong>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <!-- <td>USDT TRC-20</td> -->
+                                        <td style="background-color: #FFF4E1;">15 美元</br>（或等值货币）</td>
+                                        <td style="background-color: #fee48f;">即时到账</td>
+                                        <td style="border-bottom-right-radius: 20px;background-color: #FFF4E1;">覆盖
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="table table-striped mb-30">
+                                <tbody>
+                                    <tr>
+                                        <th class="h5 dwth" rowspan="2" style="
+                                background: #fee48f;
+                                border-top-left-radius: 20px;
+                                border-bottom-left-radius: 20px;
+                              "><strong>电子钱包</strong></th>
+
+                                        <th class="h5" scope="col" style="background: #fedc56"><strong>最低入金金额</strong>
+                                        </th>
+                                        <th class="h5" scope="col" style="background: #fedc56"><strong>处理时间</strong>
+                                        </th>
+                                        <th class="h5" scope="col"
+                                            style="background: #fedc56; border-top-right-radius: 20px">
+                                            <strong>手续费</strong>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <!-- <td>USDT TRC-20</td> -->
+                                        <td style="background-color: #FFF4E1;">15 美元</br>（或等值货币）</td>
+                                        <td style="background-color: #fee48f;">即时到账</td>
+                                        <td style="border-bottom-right-radius: 20px;background-color: #FFF4E1;">覆盖
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="table table-striped mb-30">
+                                <tbody>
+                                    <tr>
+                                        <th class="h5 dwth" rowspan="2" style="
+                                background: #fee48f;
+                                border-top-left-radius: 20px;
+                                border-bottom-left-radius: 20px;
+                              "><strong>本地在线银行</strong></th>
+
+                                        <th class="h5" scope="col" style="background: #fedc56"><strong>最低入金金额</strong>
+                                        </th>
+                                        <th class="h5" scope="col" style="background: #fedc56"><strong>处理时间</strong>
+                                        </th>
+                                        <th class="h5" scope="col"
+                                            style="background: #fedc56; border-top-right-radius: 20px">
+                                            <strong>手续费</strong>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <!-- <td>USDT TRC-20</td> -->
+                                        <td style="background-color: #FFF4E1;">15 美元</br>（或等值货币）</td>
+                                        <td style="background-color: #fee48f;">即时到账</td>
+                                        <td style="border-bottom-right-radius: 20px;background-color: #FFF4E1;">覆盖
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="table table-striped mb-30">
+                                <tbody>
+                                    <tr>
+                                        <th class="h5 dwth" rowspan="2" style="
+                                background: #fee48f;
+                                border-top-left-radius: 20px;
+                                border-bottom-left-radius: 20px;
+                              "><strong>国际银行电汇</strong></th>
+
+                                        <th class="h5" scope="col" style="background: #fedc56"><strong>最低入金金额</strong>
+                                        </th>
+                                        <th class="h5" scope="col" style="background: #fedc56"><strong>处理时间</strong>
+                                        </th>
+                                        <th class="h5" scope="col"
+                                            style="background: #fedc56; border-top-right-radius: 20px">
+                                            <strong>手续费</strong>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <!-- <td>USDT TRC-20</td> -->
+                                        <td style="background-color: #FFF4E1;">500 美元</br>（或等值货币）</td>
+                                        <td style="background-color: #fee48f;">2-5 个工作日</td>
+                                        <td style="border-bottom-right-radius: 20px;background-color: #FFF4E1;">
+
+                                            不覆盖</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <h2 style="font-style: italic; font-size: 15px;">*以上信息仅供参考，具体详情及地区适用选项，请前往 Monaxa
+                                门户的“我的银行”页面查看。</h2>
+
+                        </div>
+
+                        <div class="text-center" style="font-size: 25px;"><a class="btn-get-started"
+                                href="https://account.monaxa.com/login">入金</a></div>
+                    </div>
+                    <!-- Withdrawal Tab Content -->
+
+                    <div aria-labelledby="withdrawal-tab" class="tab-pane fade show active" id="withdrawal"
+                        role="tabpanel">
+                        <div class="table-responsive">
+
+
+
+                            <table class="table table-striped mb-30">
+                                <tbody>
+                                    <tr>
+                                        <th class="h5 dwth" rowspan="2" style="
+                                background: #fee48f;
+                                border-top-left-radius: 20px;
+                                border-bottom-left-radius: 20px;
+                              "><strong>加密货币 </strong></th>
+                                        <!-- <th class="h5" scope="col" style="background: #fedc56"><strong>Network</strong></th> -->
+                                        <th class="h5" scope="col" style="background: #fedc56"><strong>最低出金金额</strong>
+                                        </th>
+                                        <th class="h5" scope="col" style="background: #fedc56"><strong>处理时间</strong>
+                                        </th>
+                                        <th class="h5" scope="col"
+                                            style="background: #fedc56; border-top-right-radius: 20px">
+                                            <strong>手续费</strong>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <!-- <td>USDT TRC-20</td> -->
+                                        <td style="background-color: #FFF4E1;">20 USDT</td>
+                                        <td style="background-color: #fee48f;">最长 24 个工作小时</td>
+                                        <td style="border-bottom-right-radius: 20px;background-color: #FFF4E1;">覆盖
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="table table-striped mb-30">
+                                <tbody>
+                                    <tr>
+                                        <th class="h5 dwth" rowspan="2" style="
+                                background: #fee48f;
+                                border-top-left-radius: 20px;
+                                border-bottom-left-radius: 20px;
+                              "><strong>电子钱包</strong></th>
+
+                                        <th class="h5" scope="col" style="background: #fedc56"><strong>最低出金金额</strong>
+                                        </th>
+                                        <th class="h5" scope="col" style="background: #fedc56"><strong>处理时间</strong>
+                                        </th>
+                                        <th class="h5" scope="col"
+                                            style="background: #fedc56; border-top-right-radius: 20px">
+                                            <strong>手续费</strong>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <!-- <td>USDT TRC-20</td> -->
+                                        <td style="background-color: #FFF4E1;">15 美元</br>（或等值货币）</td>
+                                        <td style="background-color: #fee48f;">即时到账</td>
+                                        <td style="border-bottom-right-radius: 20px;background-color: #FFF4E1;">覆盖
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="table table-striped mb-30">
+                                <tbody>
+                                    <tr>
+                                        <th class="h5 dwth" rowspan="2" style="
+                                background: #fee48f;
+                                border-top-left-radius: 20px;
+                                border-bottom-left-radius: 20px;
+                              "><strong>本地存款服务商</strong></th>
+
+                                        <th class="h5" scope="col" style="background: #fedc56"><strong>最低出金金额</strong>
+                                        </th>
+                                        <th class="h5" scope="col" style="background: #fedc56"><strong>处理时间</strong>
+                                        </th>
+                                        <th class="h5" scope="col"
+                                            style="background: #fedc56; border-top-right-radius: 20px">
+                                            <strong>手续费</strong>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <!-- <td>USDT TRC-20</td> -->
+                                        <td style="background-color: #FFF4E1;">15 美元</br>（或等值货币）</td>
+                                        <td style="background-color: #fee48f;">最长 24 个工作小时</td>
+                                        <td style="border-bottom-right-radius: 20px;background-color: #FFF4E1;">覆盖
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="table table-striped mb-30">
+                                <tbody>
+                                    <tr>
+                                        <th class="h5 dwth" rowspan="2" style="
+                                background: #fee48f;
+                                border-top-left-radius: 20px;
+                                border-bottom-left-radius: 20px;
+                              "><strong>本地在线银行</strong></th>
+
+                                        <th class="h5" scope="col" style="background: #fedc56"><strong>最低出金金额</strong>
+                                        </th>
+                                        <th class="h5" scope="col" style="background: #fedc56"><strong>处理时间</strong>
+                                        </th>
+                                        <th class="h5" scope="col"
+                                            style="background: #fedc56; border-top-right-radius: 20px">
+                                            <strong>手续费</strong>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <!-- <td>USDT TRC-20</td> -->
+                                        <td style="background-color: #FFF4E1;">15 美元</br>（或等值货币）</td>
+                                        <td style="background-color: #fee48f;">即时到账</td>
+                                        <td style="border-bottom-right-radius: 20px;background-color: #FFF4E1;">覆盖
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="table table-striped mb-30">
+                                <tbody>
+                                    <tr>
+                                        <th class="h5 dwth" rowspan="2" style="
+                                background: #fee48f;
+                                border-top-left-radius: 20px;
+                                border-bottom-left-radius: 20px;
+                              "><strong>国际银行电汇</strong></th>
+
+                                        <th class="h5" scope="col" style="background: #fedc56"><strong>最低出金金额</strong>
+                                        </th>
+                                        <th class="h5" scope="col" style="background: #fedc56"><strong>处理时间</strong>
+                                        </th>
+                                        <th class="h5" scope="col"
+                                            style="background: #fedc56; border-top-right-radius: 20px">
+                                            <strong>手续费</strong>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <!-- <td>USDT TRC-20</td> -->
+                                        <td style="background-color: #FFF4E1;">500 美元</br>（或等值货币）</td>
+                                        <td style="background-color: #fee48f;">2-5 个工作日</td>
+                                        <td style="border-bottom-right-radius: 20px;background-color: #FFF4E1;">
+
+                                            不覆盖</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <h2 style="font-style: italic; font-size: 15px;">*以上信息仅供参考，具体详情及地区适用选项，请前往 Monaxa
+                                门户的“我的银行”页面查看。</h2>
+
+
+                        </div>
+
+                        <div class="text-center mt-30" style="font-size: 25px;"><a class="btn-get-started"
+                                href="https://account.monaxa.com/login">出金</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-50">
+                <div class="col-lg-12 col-md-12">
+                    <div class="container box-dash">
+                        <h1>重要信息和费用</h1>
+
+                        <h2>1. Monaxa不接受第三方付款进入交易账户。任何存入你的交易账户的款项必须与你的银行账户资料相符。</h2>
+
+                        <h2>2. 入金和出金的方式可能因您的居住国和管辖区而不同。可用的付款方式可以在您的客户档案中查看。</h2>
+
+                        <h2>3. 处理时间取决于汇款渠道，可能立即处理，但有时需要更长时间。</h2>
+
+                        <h2>4. Monaxa支付本地网上银行和本地存款/托管手续费。加密货币钱包转账费用需自付。</h2>
+
+                        <h2>5. 加密货币存款需返回同钱包，超过存入金额可使用其他方式。优先顺序：a. 加密货币，b. 本地存款人/托管，c. 本地网上银行</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+</main>
