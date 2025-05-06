@@ -1,0 +1,422 @@
+<script>
+	$(document).ready(function(){
+		domain=window.location.hostname;
+		userId=fxbo.request.userId;
+		userEmail=encodeURIComponent(fxbo.request.email);
+		
+		$(".btnAI").html('%widget_earnworkz_pl_ai%');
+		$(".btnFiber").html('%widget_earnworkz_pl_fiber%');
+		$(".btnG10").html('%widget_earnworkz_pl_g10%');
+		$(".btnMA").html('%widget_earnworkz_pl_ma%');
+		$(".btnSilver").html('%widget_earnworkz_pl_silver%');
+		
+		$(".getNows").click(function() {
+			location.replace("https://apilive.monaxa.com/rebateapi/public/acadamis/cw/subscriptioncourse/"+userId+"?type=121&senderUrl=https://"+domain);
+		});
+	});
+</script>
+
+
+<!-- Bootstrap CSS -->
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+<style>
+    h3 {
+        font-size: 1.3em;
+    }
+
+    .top-section {
+        padding: 80px 0px 0px;
+        background: url('https://cdn.learnwurks.com/assets/img/acadamis/EarnWorkz/EarnWorkz-bg.png') no-repeat;
+    }
+
+    .top-section h1 {
+        color: rgb(72, 165, 156);
+        font-weight: bold;
+        font-size: 3.2em;
+    }
+
+    .top-section h3,
+    .mid-section h3 {
+        color: rgb(40, 40, 41);
+        opacity: 0.8;
+    }
+
+    a.btn-success {
+        border-radius: 50px;
+        color: #ffffff !important;
+        background: #316d69 !important;
+        padding: 15px 25px;
+        font-size: 17px;
+    }
+
+    .mid-section {
+        background: #e3f8f5;
+        padding: 50px 0;
+        font-size: 1.3em;
+    }
+
+    .section {
+        background: #ffffff;
+        font-size: 1.3em;
+        padding: 50px 0;
+    }
+
+    .section h1 {
+        font-weight: bold;
+        font-size: 3em;
+    }
+
+    .section p.title {
+        font-weight: bold;
+        font-size: 1.3em;
+        color: #000000;
+    }
+
+    .invfund {
+        margin-bottom: 100px;
+        cursor: pointer;
+    }
+
+    .invfund h3 {
+        font-size: 1.5em;
+    }
+
+    .invfund p {
+        color: rgb(40, 40, 41);
+        opacity: 0.8;
+    }
+
+    .fund-img-sec {
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        margin-right: 10px;
+    }
+
+    .description {
+        font-size: 1.25rem;
+        color: #444;
+        margin-top: 20px;
+        line-height: 1.6;
+    }
+
+	.fw-bold {
+		font-size:1.75em;
+	}
+	
+	.bi-arrow-right-circle {
+		margin-left:5px;
+		color:#ffffff;
+		font-weight:bold;
+	}
+    /* icon  */
+
+    .rounded-small {
+        background-color: #316d69;
+        color: #fff;
+        border-radius: 15px;
+        padding: 8px;
+        margin-top: 15px;
+        max-width: 42px;
+        text-align: center;
+
+    }
+</style>
+<div class="top-section">
+    <div class="row justify-content-md-center">
+        <div class="col-8">
+            <div class="row">
+                <div class="col-6">
+                    <h1>EarnWorkz</h1>
+                    <br />
+                    <h3>A new standard of investing centered around you. Have your investment funds managed and attend
+                        weekly livestreams to Q&A the results.</h3>
+                    <br />
+                    %widget_earnworkz_get_now%
+                </div>
+                <div class="col-4">
+                    <img
+                        src="https://lwfiles.mycourse.app/63cee195406afef780c33083-public/4a3e6061ffaa815f4bb593e0d0196393.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mid-section">
+    <div class="row justify-content-md-center">
+        <div class="col-8">
+            <div class="row">
+                <div class="col-3">
+                    <div class="rounded-small"><span class="bi bi-eye-fill"></span></div>
+					<br />
+                    <h3>Trade Desk Services</h3>
+                    Like how air traffic control works to keep you safe. But for your money.
+                </div>
+                <div class="col-3">
+                    <div class="rounded-small"><span class="bi bi-person"></span></div>
+                    <br />
+					<h3>Managed Funds</h3>
+                    Exclusive PAMM Managers trade pooled investments from the many.
+                </div>
+                <div class="col-3">
+                    <div class="rounded-small"><span class="bi bi-tablet-fill"></span></div>
+                    <br />
+					<h3>Livestreaming </h3>
+                    Openly discuss weekly investment results & future expectations.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section">
+    <div class="row justify-content-md-center">
+        <div class="col-8">
+            <div class="row">
+                <div class="col-6">
+                    <h1>Trade Desk Services</h1>
+                    <br />
+                    <span
+                        style="color: rgb(40, 40, 41); background-color: rgb(227, 248, 245); font-weight:bold; padding:6px 0;">Command
+                        and Control</span>
+                    <br />
+                    <span style="color: rgb(158, 158, 158); padding-top:3px;"><em>"Like air traffic control but for your
+                            investments."</em></span>
+                    <br />
+                    <br />
+                    <br />
+                    <p>Recruits exclusive PAMM Managers with verified consistent success records spanning 12+ months
+                        managing significant client funds.</p>
+                    <br />
+                    <p>Holds PAMM Managers accountable to strict risk protocols carefully designed to preserve investor
+                        capital while pursuing growth.</p>
+                    <br />
+                    <p>Cultivates diversified investment strategies for optimal portfolio distribution and exposure
+                        management.</p>
+
+                </div>
+                <div class="col-6">
+                    <img
+                        src="https://lwfiles.mycourse.app/63cee195406afef780c33083-public/38a81bfebfe28d6f5ac3a161ba6c5891.jpg" />
+                    <p style="text-align: center; font-size:1.8em;"><strong><em>"The right people, tools and decisions
+                                at the right time to keep you safe."</em></strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section">
+    <div class="row justify-content-md-center">
+        <div class="col-8">
+            <h1>Investment Funds</h1>
+            <br />
+            <h3 style="font-size:1.5em;">Choose Wisely. Grow Confidently.</h3>
+            <br />
+
+            <div class="row invfund" data-toggle="modal" data-target=".ai-fund-details">
+                <div class="col-4">
+                    <img
+                        src="https://lwfiles.mycourse.app/63cee195406afef780c33083-public/e0bd6262bdbfbec1dd032bfebe3cf77c.png" />
+                </div>
+                <div class="col-8">
+                    <p class="title">AI Fund</p>
+                    <p>Advanced correlation analysis, genetic algorithms, and machine learning, ensuring precision and
+                        adaptability in dynamic markets.</p>
+                    <img src="https://lwfiles.mycourse.app/63cee195406afef780c33083-public/0c5fd4ae8ad09f36fb80507377186e0b.png"
+                        alt="Graphic illustrating the benefits of choosing Acadamis" class="fund-img-sec"><span
+                        class="description">PAMM Manager 404</span><br /><br />
+						<a class="btn btn-success">Learn More</a>
+                </div>
+            </div>
+            <div class="row invfund" data-toggle="modal" data-target=".fiber-fund-details">
+                <div class="col-4"><img
+                        src="https://lwfiles.mycourse.app/63cee195406afef780c33083-public/869ca59bcd2ff39ed94278bdaa90f9b9.jpg" />
+                </div>
+                <div class="col-8">
+                    <p class="title">Fiber Fund</p>
+                    <p>Meticulously designed to capitalize on the behavioural patterns, liquidity structures, and
+                        volatility indicators of the EUR/USD pair.</p>
+                    <img src="https://lwfiles.mycourse.app/63cee195406afef780c33083-public/d6183f7447bd31a426163d58638236bd.png"
+                        alt="Graphic illustrating the benefits of choosing Acadamis" class="fund-img-sec"><span
+                        class="description">PAMM Manager 303</span><br /><br />
+						<a class="btn btn-success">Learn More</a>
+                </div>
+            </div>
+            <div class="row invfund" data-toggle="modal" data-target=".g10-fund-details">
+                <div class="col-4"><img
+                        src="https://lwfiles.mycourse.app/63cee195406afef780c33083-public/b01330425c56ba90395319992dc7aa8a.jpg" />
+                </div>
+                <div class="col-8">
+                    <p class="title">G10 Fund</p>
+                    <p>Utilising key areas of support/resistance and at a retracement to the mean. This strategy trades
+                        the G10 currencies and Gold.</p>
+                    <img src="https://lwfiles.mycourse.app/63cee195406afef780c33083-public/5114135cc691745af7d0c89fa75dab04.png"
+                        alt="Graphic illustrating the benefits of choosing Acadamis" class="fund-img-sec"><span
+                        class="description">PAMM Manager 101</span><br /><br />
+						<a class="btn btn-success">Learn More</a>
+                </div>
+            </div>
+            <div class="row invfund" data-toggle="modal" data-target=".moving-fund-details">
+                <div class="col-4"><img
+                        src="https://lwfiles.mycourse.app/63cee195406afef780c33083-public/4fb62eeab9deb8ae47e888b92148f416.png" />
+                </div>
+                <div class="col-8">
+                    <p class="title">Moving Averages Fund</p>
+                    <p>Leverages Exponential Moving Averages (EMAs) to systematically identify trends and execute trades
+                        with on multiple forex pairs.</p>
+                    <img src="https://lwfiles.mycourse.app/63cee195406afef780c33083-public/61d6d29a7897484520b2f33f80734b20.png"
+                        alt="Graphic illustrating the benefits of choosing Acadamis" class="fund-img-sec"><span
+                        class="description">PAMM Manager 505</span><br /><br />
+						<a class="btn btn-success">Learn More</a>
+                </div>
+            </div>
+            <div class="row invfund" data-toggle="modal" data-target=".silver-fund-details">
+                <div class="col-4"><img
+                        src="https://lwfiles.mycourse.app/63cee195406afef780c33083-public/eb128736fcf06ca9991e786373a018ea.jpg" />
+                </div>
+                <div class="col-8">
+                    <p class="title">Silver Fund</p>
+                    <p>Maximize Long-Term Growth with a Strategic, High-Liquidity Investment with targeted exposure to
+                        GBP, NZD, and Silver.</p>
+                    <img src="https://lwfiles.mycourse.app/63cee195406afef780c33083-public/37d72bbb64af135d324ec64ed073490b.png"
+                        alt="Graphic illustrating the benefits of choosing Acadamis" class="fund-img-sec"><span
+                        class="description">PAMM Manager 202</span><br /><br />
+						<a class="btn btn-success">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section" style="padding-bottom:100px;">
+    <div class="row justify-content-md-center">
+        <div class="col-8">
+            <div class="row">
+                <div class="col-7">
+                    <img src="https://cdn.learnwurks.com/assets/img/acadamis/EarnWorkz/Livestreams.png" />
+                </div>
+                <div class="col-5">
+                    <p>Trade Desk Commentary</p>
+                    <h1 style="text-decoration:underline;">Livestreams</h1>
+                    <br />
+                    <p>PAMM Managers and you discussing weekly value movements, expectations, market updates, price
+                        rumors & more.</p>
+                    <br />
+                    <a href="https://www.monaxa.com/event" target="_blank" class="btn btn-success">Click To See The Next
+                        Livestream</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section" style="padding:50px 0;">
+    <div class="row justify-content-md-center">
+        <div class="col-8">
+			<p><b>General Disclaimer & Risk Warning</b><br />
+			Monaxa provides trading technology and brokerage services but is not affiliated with, responsible for, or in control of third-party trading desks using its platform. These independent desks, such as EarnWorkz, manage their own strategies and PAMM accounts. Trading carries significant risk, and Monaxa is not liable for any financial losses incurred through participation in these third-party schemes. Past performance is not a guarantee of future results.</p>
+		</div>
+	</div>
+</div>
+
+<!-- modal -->
+<div class="modal fade getNow-details" tabindex="-1" role="dialog" aria-labelledby="getNow"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>General  Disclaimer Monaxa provides technology and brokerage services to individual traders and institutional entities. Certain third-party proprietary trading desks may offer managed strategies or promote pooled account services using PAMM account structures. These trading desks operate independently and are not affiliated, managed, endorsed, or controlled by Monaxa. Any performance results, strategies, or promotional claims made by such desks are the sole responsibility of the third-party entity.</p>
+
+				<p><b>Performance & Risk Disclosure</b><br />
+				Risk Warning: Trading financial instruments involves a high level of risk. Any historical or projected performance shared by third-party traders or trading desks is not indicative of future results. Monaxa is not responsible for any losses arising from participation in PAMM/Master account schemes managed by external entities. Participation in PAMM accounts is the investors responsibility and may result in partial or full loss of funds.</p>
+
+				<p><b>Third-Party Partnership Disclaimer</b><br />
+				The Earnworkz proprietary trading desk is an independent entity. The trading strategies and the management of their PAMM accounts are the sole responsibility of the Earnworkz trading desk and do not reflect the views or obligations of Monaxa.</p>
+				
+				<p>&nbsp;</p>
+				<a href="#" class="btn btn-success getNows">I want to prooceed!</a>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade ai-fund-details" tabindex="-1" role="dialog" aria-labelledby="ai-fund" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                %widget_ai_fund_content%
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade fiber-fund-details" tabindex="-1" role="dialog" aria-labelledby="fiber-fund" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                %widget_fiber_fund_content%
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade g10-fund-details" tabindex="-1" role="dialog" aria-labelledby="g10-fund" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                %widget_g10_fund_content%
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade moving-fund-details" tabindex="-1" role="dialog" aria-labelledby="moving-fund"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                %widget_moving_fund_content%
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade silver-fund-details" tabindex="-1" role="dialog" aria-labelledby="silver-fund"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                %widget_silver_fund_content%
+            </div>
+        </div>
+    </div>
+</div>

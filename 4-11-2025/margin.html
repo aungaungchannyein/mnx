@@ -1,0 +1,165 @@
+<style>
+#depoWithdraw {
+  display: flex;
+  gap: 0.5rem; /* Space between buttons */
+}
+
+#depoWithdraw .nav-item {
+  flex: 1;
+  display: flex;
+}
+
+#depoWithdraw .nav-link {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  white-space: normal;
+  padding: 1rem 0.75rem;
+  font-size: 2rem;
+  height: 100%;
+}
+
+/* Mobile tweaks */
+@media (max-width: 575.98px) {
+  #depoWithdraw {
+    gap: 0.5rem;
+  }
+
+  #depoWithdraw .nav-link {
+    padding: 0.5rem 0.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+
+</style>
+<main id="main">
+    <section class="support" id="support">
+    <div class="container mt-50 pt-50">
+        <h1 class="text-center">ใช้เงินน้อยกว่าในเทรดออเดอร์ที่ใหญ่ขึ้น</h1>
+    
+        <h2 class="text-center">มาร์จิ้นคือเปอร์เซนต์ของขนาดออเดอร์ และจะแตกต่างกันตามข้อกำหนดและเงื่อนไขของตลาด</h2>
+        &nbsp;
+    
+        <div class="row mt-50 justify-content-center margin-formulas">
+            <div class="col-10">
+                <h2 class="text-center"><strong>โปรดดูสูตรคำนวนมาร์จิ้นด้านล่าง</strong></h2>
+            </div>
+    
+            <ul class="nav nav-tabs justify-content-center" id="depoWithdraw" role="tablist">
+                <li class="nav-item h1" role="presentation"><button aria-controls="frx" aria-selected="true" class="nav-link mx-auto active" data-bs-target="#frx" data-bs-toggle="tab" id="frx-tab" role="tab" type="button">Forex</button></li>
+                <li class="nav-item h1" role="presentation"><button aria-controls="cics" aria-selected="false" class="nav-link mx-auto" data-bs-target="#cics" data-bs-toggle="tab" id="cics-tab" role="tab" type="button">Commodities, Indices, Crypto, Shares</button></li>
+            </ul>
+    
+            <div class="tab-content mt-20 mb-70" id="depoWithdrawContent" style="margin: 50px 0;background: #FFF;padding: 50px;opacity: .7;border-radius: 20px;box-shadow: 1px 1px 6px 1px rgb(0 0 0 / 37%);-webkit-box-shadow: 1px 1px 6px 1px rgb(0 0 0 / 37%);-moz-box-shadow: 1px 1px 6px 1px rgba(0,0,0,0.37);border: 1px solid #eeeeee;">
+                <div aria-labelledby="frx-tab" class="tab-pane fade show active" id="frx" role="tabpanel">
+                    <div class="box">
+                        <div class="table-responsive">
+                            <p>If your account currency is different to the base currency of the pair traded.<br />
+                                Required Margin = Lot Size * Contract Size / Leverage * account currency exchange rate</p>
+    
+                            <p>Example Trading 1 lot of EUR/USD using 1:100 leverage with an account denominated in <strong>USD</strong>.<br />
+                                1 * 100000 / 100 * 1.05280 (current rate EUR/USD) = $1,052.80</p>
+    
+                            <p>If your account is denominated in USD and the base currency of the pair traded is also in USD</p>
+    
+                            <p>Example Trading 3 lots of USD/JPY using 1:100 leverage with an account denominated in <strong>USD</strong>.<br />
+                                3 * 100000 / 100 = $3,000</p>
+    
+                            <p>When converting values from one currency to another, you need to either multiple or divide by the current exchange rate.</p>
+    
+                            <ul>
+                                <li>If you want to convert from the base currency to the quoted, you would multiply by the current exchange rate.</li>
+                                <li>f you want to convert from the quoted currency to the base, you would divide by the currency exchange rate.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+    
+                <div aria-labelledby="cics-tab" class="tab-pane fade" id="cics" role="tabpanel">
+                    <div class="box">
+                        <div class="table-responsive">
+                            <p>Required Margin = Lot Size * Contract Size * Market Price / leverage</p>
+    
+                            <p>Example Trading 1 lot (100 Oz) of XAU/USD using 1:200 leverage with an account denominated in USD. (Current market price: 1777.60)<br />
+                                1 * 100 * 1777.60 / 200 = $888.8</p>
+    
+                            <p>Example Trading 1 lot (100 Oz) of XAU/USD using 1:200 leverage with an account denominated in EUR. (Current market price: 1777.60)<br />
+                                1 * 100 * 1777.60 / 200 / 1.0528 (current EUR/USD rate) = €844.22</p>
+    
+                            <p>Example Trading 1 Unit of BTC/USD using 1:50 leverage with an account denominated in <strong>USD</strong>. (Current market price: 16843.35)<br />
+                                1 * 1 * 16843.35 / 50 = $336.87</p>
+    
+                            <p>Example Trading 1 Unit of BTC/USD using 1:50 leverage with an account denominated in <strong>EUR</strong>. (Current market price: 16843.35)<br />
+                                1 * 1 * 16843.35 / 50 / 1.05344 (current EUR/USD rate) = €319.77</p>
+    
+                            <ul>
+                                <li><strong>Lot Size</strong> - is the volume of your positionContract</li>
+                                <li><strong>Size</strong> - is the actual number of units of an asset in your position</li>
+                                <li><strong>Leverage</strong> - is the leverage level applicable to your trading account or symbol.</li>
+                                <li><strong>Market Price</strong> - is the price at which your position is placed</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="row faq justify-content-center content mt-30 mb-50">
+            <div class="col-10">
+                <h1>FAQs</h1>
+    
+                <ul class="faq-list">
+                    <li>
+                        <div class="collapsed question" data-bs-toggle="collapse" href="#faq1">
+                            <h2>ฟรีมาร์จิ้นคืออะไร</h2>
+                            <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+    
+                        <div class="collapse" data-bs-parent=".faq-list" id="faq1">
+                            <p>คำอธิบายที่เข้าใจได้ง่ายที่สุดคือ Free Margin เป็นเงินในบัญชีเทรด ที่ยังคงไม่ได้ถูกใช้ในการเปิดออเดอร์ใดๆ ในการคำนวนฟรีมาร์จิ้นนี้ คุณจะต้องหักมาร์จิ้นที่ถูกใช้ในออเดอร์ที่คุณเปิดค้างไว้อยู่ ออกจาก Equity ของคุณ (เช่น บาลานซ์ หักลบกับกำไรหรือขาดทุน จากการเปิดออเดอร์ใดๆ) ยกตัวอย่างเช่น นายเอ มีบาลานซ์ 10,000 USD และใช้เงินจำนวนนี้ไปเพื่อเปิดออเดอร์ EURUSD ในขณะที่อัตราแลกเปลี่ยนอยู่ที่ราคา 1.20000 นายเอจะต้องใช้เงิน 240,000 USD (200,000 x 1.2000) ซึ่งในการเปิดออเดอร์นี้จะต้องใช้มาร์จิ้น 240,000/50 = 4,800 USD ถ้าหากราคาของ EURUSD ร่วงลงไปที่ 1.19050 หลังจากที่นายเอ ได้เปิดออเดอร์แล้ว จะส่งผลให้นายเอขายทุน 0.00950 pip (1.20000 - 1.19050) ซึ่งคิดเป็นมูลค่า 2,280 USD (240,000 x 0.00950) ดังนั้นการใช้สูตรคำนวน Free Margin นี้ จะช่วยให้นายเอทราบว่าในกรณีนี้ Free มาร์จิ้นคงเหลือจะอยู่ที่ (10,000 USD - 2,280 USD) - (Margin 4,800 USD) = 2,920 USD</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsed question" data-bs-toggle="collapse" href="#faq2">
+                            <h2>Margin Level คืออะไร</h2>
+                            <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+    
+                        <div class="collapse" data-bs-parent=".faq-list" id="faq2">
+                            <p>Margin Level บ่งบอกถึง "สุขภาพ" ของบัญชีเทรด โดยมันคืออัตราส่วนของ Equity ต่อ Margin ที่ถูกใช้เพื่อเปิดออเดอร์ไปแล้ว ซึ่งจะแสดงผลในรูปเปอร์เซนต์ สูตรในการคำนวน Margin Lever คือ (Equity/Margin ที่ถูกใช้อยู่) x 100 สมมุติว่านายบีมี Equity 5,000 USD และถูกใช้เป็น Margin ไปแล้ว 1,000 USD Margin Level ของนายบี จะถูกคำนวนดังนั้น (5,000 USD/1,000 USD) x 100 = 500% ในกรณีนี้บัญชีของนายบีถือว่ามีสุขภาพที่ดี ข้อดีของการตรวจสอบว่าบัญชีเทรดมีสุขภาพที่ดีหรือไม่สามารถพิจารณาว่า Margin Level อยู่สูงกว่า 100% หรือไม่</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsed question" data-bs-toggle="collapse" href="#faq3">
+                            <h2>Margin Call คืออะไร</h2>
+                            <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+    
+                        <div class="collapse" data-bs-parent=".faq-list" id="faq3">
+                            <p>A margin call is the term used to describe the alert sent to a trader to notify them that the capital in their account has fallen below the minimum amount needed to keep a position open. A margin call can mean that the trader has to put up additional funds to balance the account, or close positions to reduce the maintenance margin required.</p>
+    
+                            <p>Margin call can also be used to describe the status of your account – i.e., you are 'on margin call' because the funds in your account are below the margin requirement.</p>
+    
+                            <p>When you trade with leveraged products – such as CFDs – there are two types of margin: a deposit margin, needed to open the position, and a maintenance margin, needed to keep the position open. It is the failure to uphold the latter that will trigger a margin call.</p>
+    
+                            <p>If a trade starts to lose money, the funds in your account may no longer be enough to keep the position open and your provider will ask you to top up your account to bring your balance up to the minimum margin – this notification is a margin call. If you top up your funds, the position will remain open. If not, your provider may close the position and any losses incurred will be realized.</p>
+    
+                            <p>The term margin call came from the practice of brokers calling their clients to notify them of the account deficit. But these days, most margin calls are delivered by email.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsed question" data-bs-toggle="collapse" href="#faq4">
+                            <h2>Stop Out คืออะไร</h2>
+                            <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+    
+                        <div class="collapse" data-bs-parent=".faq-list" id="faq4">
+                            <p>Stop Out Level คือ "Margin Level" ระดับที่ถูกกำหนดว่าออเดอร์นั้นๆจะถูกบังคับปิด เพื่อป้องกันไม่ให้ตัวเลขในบัญชีติดลบ เปอร์เซนต์ที่ Margin Level แสดงบ่งชี้ว่าคุณมี equity เป็นสัดส่วนเท่าไรเมื่อเทียบกับ Margin การใช้งาน Leverage มีส่วนสำคัญในเรื่องนี้ เนื่องจากการใช้ Leverage มากขึ้นเท่าไร จะส่งผลให้ Margin ที่คุณจะต้องใช้ในการรักษาสถานะออเดอร์น้อยลงเท่านั้น ซึ่งแปลว่าคุณจะมี Equity ที่ยังไม่ได้ถูกใช้มากขึ้น นี่คืออีกหนึ่งเหตุผลที่ว่าทำไมการใช้ Leverage มากเกินไปจึงมีความเสี่ยง คุณสามารถเสีย Equity มากขึ้นกว่าเดิม ก่อนที่จะถึงระดับ Stop Out และมีผลให้เงินคุณสูญเสียเงินในบัญชีทั้งหมด</p>
+                        </div>
+                    </li>
+                </ul>
+                <a class="btn-get-started mt-50" href="faq">คลิกเพื่อดู FAQ เพิ่มเติม</a></div>
+        </div>
+    </div>
+    </section>
+    </main>
+    
