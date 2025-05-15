@@ -1,0 +1,184 @@
+<style type="text/css">div#popupBanner {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+div#popupBanner {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.modal-content {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+}
+.modal-header {
+    border-bottom: none;
+    color: black;
+}
+.modal-body {
+    color: black;
+}
+.checkbox-container {
+    margin-top: 15px;
+}
+.btn {
+    margin-top: 10px;
+}
+.custom-btn {
+  color: #6c757d; /* Gray color for text */
+  background-color: transparent; /* Transparent background */
+  border: 1px solid #d6d8db; /* Light gray border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 5px 15px; /* Padding for the button */
+}
+.custom-btn:hover {
+  background-color: #fce38a;      ; /* Light gray on hover */
+  color: #495057; /* Darker text on hover */
+}
+.custom-btn:disabled {
+  background-color: #e9ecef; /* Gray background for disabled state */
+  color: #ced4da; /* Muted text for disabled state */
+  cursor: not-allowed; /* Disable pointer */
+}
+/* Style for the Monamaxcup button */
+.button-overlay {
+        position: absolute;
+        top: 78%;
+        left: 10%;
+        opacity: 0;
+        width: 250px;
+        height: 60px;
+        background: transparent;
+    }
+</style>
+
+<div aria-labelledby="bnn1Label" aria-modal="true" class="modal modal-lg fade" id="popupBanner" role="dialog" style="display: none;" tabindex="-1">
+<div class="modal-dialog modal-dialog-centered" style="max-width: 500px;">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 class="modal-title">Sorry</h3>
+        </div>
+        <div class="modal-body">
+            <p>
+                Company policy prevents us from offering services to individuals residing in <strong id="countryName"></strong>.
+            </p>
+            <p>
+                If you are not a resident of <strong id="countryNameRepeat"></strong> and this message appears incorrectly, please confirm and click continue.
+            </p>
+            <div class="checkbox-container">
+                <input type="checkbox" id="confirmCheckbox">
+                <label for="confirmCheckbox">I confirm I am not a resident of <strong id="countryNameCheckbox"></strong>.</label>
+            </div>
+            <button class="btn custom-btn" id="continueButton" disabled>Continue</button>
+        </div>
+    </div>
+</div>
+</div>
+<!-- <div aria-labelledby="bnn1Label" aria-modal="true" class="modal modal-lg fade" id="popupBanner2" role="dialog" style="display: none;" tabindex="-1">
+	<div class="modal-dialog modal-dialog-centered" style="max-width: 600px;">
+		<div class="modal-content" style="background-color: transparent; border: none;">
+			<div class="modal-header" style="border-bottom: none; position: relative;">
+				<h1 class="modal-title fs-5" id="bnn1Label">&nbsp;</h1>
+				<button aria-label="Close" class="btn-close" data-bs-dismiss="modal" style="background-color: #f9d24e;opacity: 0.9 ;position: absolute; top: 85px; right: 35px; z-index: 9999;" type="button"></button></div>
+
+			<div class="modal-body">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 a-wb"><a class="url_popup" href="https://www.youtube.com/playlist?list=PLkkl7dXfeatapaTLXmaxv2we5jP8tBrUJ" target="_blank"><img class="img-fluid popup-banner-img" src="https://cdn.learnwurks.com/assets/img/Popup-banner/PODCAST-POPUP.jpg" /></a></div>
+
+						<div class="col-12 a-mb"><a class="url_popup" href="https://www.youtube.com/playlist?list=PLkkl7dXfeatapaTLXmaxv2we5jP8tBrUJ" target="_blank"><img class="img-fluid popup-banner-img" src="https://cdn.learnwurks.com/assets/img/Popup-banner/PODCAST-POPUP.jpg" /> </a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div> -->
+
+<div aria-labelledby="bnn1Label" aria-modal="true" class="modal modal-lg fade" id="popupBanner2" role="dialog" style="display: none;" tabindex="-1">
+	<div class="modal-dialog modal-dialog-centered" style="max-width: 600px;">
+		<div class="modal-content" style="background-color: transparent; border: none;">
+			<div class="modal-header" style="border-bottom: none; position: relative;">
+				<h1 class="modal-title fs-5" id="bnn1Label">&nbsp;</h1>
+				<button aria-label="Close" class="btn-close" data-bs-dismiss="modal" style="background-color: #f9d24e;opacity: 0.9 ;position: absolute; top: 85px; right: 35px; z-index: 9999;" type="button"></button></div>
+
+			<div class="modal-body">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 a-wb"><img class="img-fluid popup-banner-img" src="https://cdn.learnwurks.com/assets/img/popupThai/Popup-Trade-and-Chill-TH.png" /></div>
+
+						<div class="col-12 a-mb"><img class="img-fluid popup-banner-img" src="https://cdn.learnwurks.com/assets/img/popupThai/Popup-Trade-and-Chill-TH.png" /></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+       
+        var countryCode = sessionStorage.getItem('country_code'); 
+        var countryMapping = {
+            AF: "Afghanistan",
+            BY: "Belarus",
+            BE: "Belgium",
+            CF: "Central African Republic",
+            CU: "Cuba",
+            ET: "Ethiopia",
+            FR: "France",
+            ID: "Indonesia",
+            LB: "Lebanon",
+            LY: "Libya",
+            NI: "Nicaragua",
+            KP: "North Korea",
+            ES: "Spain",
+            SD: "Sudan",
+            SY: "Syria",
+            US: "United States",
+            VE: "Venezuela",
+            ZW: "Zimbabwe"
+        };
+
+        var restrictedCountries = Object.keys(countryMapping);
+
+        
+
+        // Check if the user has already confirmed
+        if (sessionStorage.getItem("popupConfirmed") === "true") {
+            //       setTimeout(function () {
+            //     $('#popupBanner2').modal('show');
+            // }, 8000);
+            return; // Exit if the user has already confirmed
+        }
+
+        if (restrictedCountries.includes(countryCode)) {
+            var countryName = countryMapping[countryCode];
+            $("#countryName, #countryNameRepeat, #countryNameCheckbox").text(countryName);
+
+            setTimeout(function () {
+                $('#popupBanner').modal({
+                    backdrop: 'static', // Prevent closing on background click
+                    keyboard: false     // Prevent closing with Esc key
+                }).modal('show');
+            }, 8000); // 15 seconds delay
+
+            // Enable the Continue button only if the checkbox is checked
+            $("#confirmCheckbox").on("change", function () {
+                $("#continueButton").prop("disabled", !this.checked);
+            });
+
+            // Handle Continue button click
+            $("#continueButton").on("click", function () {
+                $('#popupBanner').modal('hide');
+                sessionStorage.setItem("popupConfirmed", "true"); // Save confirmation in localStorage
+            });
+        }
+        //else {
+            //setTimeout(function () {
+            //    $('#popupBanner2').modal('show');
+          //  }, 8000);
+
+        //}
+    });
+</script>
